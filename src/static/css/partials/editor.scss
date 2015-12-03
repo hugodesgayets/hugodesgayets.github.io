@@ -1,0 +1,10 @@
+.editor {
+	background-color: #F3FAFB;
+	border-radius: 5px;
+	& p {
+		line-height: 1.7em;
+		padding: 25px;
+		font-family: "Menlo";
+		color: #4CC7D4;
+	}
+}

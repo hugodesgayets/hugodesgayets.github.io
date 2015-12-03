@@ -1,3 +1,128 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Menlo';
+  src: url("../css/fonts/Menlo/Menlo-Regular.eot");
+  src: local("☺"), url("../css/fonts/Menlo/Menlo-Regular.woff") format("woff"), url("../css/fonts/Menlo/Menlo-Regular.ttf") format("truetype"), url("../css/fonts/Menlo/Menlo-Regular.svg") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'OpenSanss';
+  src: url("../css/fonts/OpenSans/OpenSans-Light.eot");
+  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Light.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Light.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'OpenSanss';
+  src: url("../css/fonts/OpenSans/OpenSans-Regular.eot");
+  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'OpenSanss';
+  src: url("../css/fonts/OpenSans/OpenSans-Semibold.eot");
+  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Semibold.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Semibold.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Semibold.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'OpenSanss';
+  src: url("../css/fonts/OpenSans/OpenSans-Bold.eot");
+  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Bold.svg") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+body {
+  font: 1.143em / 2.1em "OpenSanss", sans-serif;
+  color: #9FA0A5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 1.5em;
+  color: #333;
+  line-height: 1.5; }
+
+.navbar {
+  font-size: 40px;
+  position: fixed;
+  width: 100%; }
+  .navbar .inner {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    height: 75px; }
+    .navbar .inner .back-btn {
+      position: relative;
+      top: 19px;
+      width: 39px;
+      height: 39px;
+      background: url("../images/back.png") #E8E8E8 center no-repeat;
+      background-size: 33.3%;
+      border-radius: 5px;
+      background-position-x: 12px; }
+
+body {
+  height: 5000px; }
+
+img {
+  width: 100%; }
+
+.container {
+  margin: auto;
+  padding: 0 30px;
+  max-width: 800px; }
+
+.wrapper {
+  margin: auto;
+  max-width: 600px; }
+
+.page-title {
+  padding: 150px 0 125px 0;
+  text-align: center; }
+
+.editor {
+  background-color: #F3FAFB;
+  border-radius: 5px; }
+  .editor p {
+    line-height: 1.7em;
+    padding: 25px;
+    font-family: "Menlo";
+    color: #4CC7D4; }
 
 /*# sourceMappingURL=styles.css.map */

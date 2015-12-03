@@ -1,14 +1,9 @@
-// // Modules and Variables
-// @import "partials/base";
+// Modules
+@import "modules/reset";
 
-// // Partials
-// @import "partials/reset";
-// @import "partials/typography";
-// @import "partials/buttons";
-// @import "partials/figures";
-// @import "partials/grids";
-// // ...
-
-// // Third-party
-// @import "vendor/colorpicker";
-// @import "vendor/jquery.ui.core";
+// Partials
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/navbar";
+@import "partials/grids";
+@import "partials/editor";
