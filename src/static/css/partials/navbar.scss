@@ -8,15 +8,15 @@
 		left: 18px;
 		right: 18px;
 		height: 75px;
-		// background-color: white;
-		// box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03);
+		background-color: white;
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03);
 
 		& .back-btn {
 			position: relative;
 			top: 19px;
 			width: 39px;
 			height: 39px;
-			background: url("../images/back.png") #E8E8E8 center no-repeat;
+			background: url("../images/back.png") $light center no-repeat;
 			background-size: 33.3%;
 			border-radius: 5px;
 			background-position-x: 12px;

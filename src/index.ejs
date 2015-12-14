@@ -2,35 +2,27 @@
 <html>
 <head>
 	<title>Hugo des Gayets - Prototyping</title>
-    <link type="text/css" rel="stylesheet" href="static/css/styles.css">  
+    <link type="text/css" rel="stylesheet" href="static/css/styles.css">
+    <meta charset="utf-8">
     <link rel="icon" type="image/png" href="static/images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="static/images/favicon-16x16.png" sizes="16x16" /> 
 </head>
 <body>
 
 <% include ../src/partials/navbar.html %>
-
 <div class="container">
-	
-
+<div class="wrapper">
 	<h1 class="page-title">Prototyping</h1>
-	
-	<div class="wrapper">
-		
-		<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+			<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+</div>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
+	<% include ../src/partials/article.html %>
 
-	<img src="static/images/framer.png" alt="">
 
- <div class="wrapper">
- 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
- </div>
-	<div class="editor">
-		<p>var x = 22 <br> var number = 2</p>
-	</div>
+		<% include ../src/partials/article.html %>
 
+
+<% include ../src/partials/footer.html %>
 
 </div>
 

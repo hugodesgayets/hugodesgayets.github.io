@@ -1,9 +1,10 @@
 .editor {
+	margin: $margin;
 	background-color: #F3FAFB;
 	border-radius: 5px;
 	& p {
 		line-height: 1.7em;
-		padding: 25px;
+		padding: 25px 0px 25px 35px;
 		font-family: "Menlo";
 		color: #4CC7D4;
 	}

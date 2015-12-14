@@ -49,10 +49,13 @@
 }
 
 
+$primary: #9FA0A5;
+$dark: #333333; 
+$light: #E8E8E8;
 
 body {
-	font: 1.143em / 2.1em "OpenSanss", sans-serif;
-	color: #9FA0A5;
+	font: 1.143em / 1.9em "OpenSanss", sans-serif;
+	color: $primary;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -61,6 +64,10 @@ body {
 
 h1 {
 	font-size: 1.5em;
-	color: #333;
+	color: $dark;
 	line-height: 1.5;
 }
+
+
+
+
