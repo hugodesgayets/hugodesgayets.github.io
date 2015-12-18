@@ -23,6 +23,12 @@ module.exports = function(grunt) {
 		        	dest: 'dist/static/images',
 		        	filter: 'isFile'
 		     	}, {
+		        	expand:true,
+		        	cwd:'src/static/videos',
+		        	src: '**',
+		        	dest: 'dist/static/videos',
+		        	filter: 'isFile'
+		     	}, {		     		
 		     		expand:true,
 		        	cwd:'src/static/js',
 		        	src: '**',
@@ -46,7 +52,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			sass: {
-				files: ['src/static/css/*.scss'],
+				files: ['src/static/css/*.scss', 'src/static/css/partials/*.scss'],
 				tasks: ['sass', 'cssmin']
 			},
 			html: {

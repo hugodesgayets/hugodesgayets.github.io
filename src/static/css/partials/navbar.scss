@@ -3,7 +3,7 @@
 	position: fixed;
 	width: 100%;
 
-	& .inner {
+	.inner {
 		position: absolute;
 		left: 18px;
 		right: 18px;
@@ -11,8 +11,9 @@
 		background-color: white;
 		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03);
 
-		& .back-btn {
+		.back-btn {
 			position: relative;
+    		z-index: 2;			
 			top: 19px;
 			width: 39px;
 			height: 39px;
@@ -20,6 +21,40 @@
 			background-size: 33.3%;
 			border-radius: 5px;
 			background-position-x: 12px;
+			transition: all 0s;
+			&:hover {
+				cursor: pointer;
+			}
+			&:active {
+				box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05) inset;
+				background-position-y: 10px;
+			}
+		}
+
+		.title-container {
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			height: 75px;			
+			z-index: 1;
+			margin: auto;
+			right: 0;
+			left: 0;
+			text-align: center;
+
+			.page-title-small {
+				color: #333333;
+				position: relative;
+				top: 90px;
+				transition: all 0.4s;
+				font-size: 20px;
+				padding-top: 22px;				
+			}
+
+			.show {
+				top: 0;
+				transition: all 0.4s;
+			}		
 		}
 	}
 }

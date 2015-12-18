@@ -1,10 +1,10 @@
-$margin: 70px auto;
+$margin: 55px auto 70px auto;
 
 body {
 	height: 5000px;
 }
 
-img {
+img, video {
 	width: 100%;
 	margin: $margin;
 }
@@ -20,20 +20,20 @@ img {
 	max-width: 600px;
 }
 
-.page-title {
+.page-title-large {
     padding: 150px 0 125px 0;
     text-align: center;
 }
 
 .article {
-	& .title {
+	.title {
 		font-size: 20px;
-	    padding-bottom: 35px;	
+	    padding: 55px 0 35px 0;
 	}
 	.separator {
 		width: 100%;
 		height: 1px;
-		margin: $margin;
+		margin-top: 55px;
 		background-color: #EFEFEF;
 	}
 }
