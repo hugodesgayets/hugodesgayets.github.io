@@ -5,16 +5,18 @@
 
 	.inner {
 		position: absolute;
-		left: 18px;
-		right: 18px;
+		left: 0px;
+		right: 0px;
 		height: 75px;
 		background-color: white;
-		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03);
+		
+
 
 		.back-btn {
 			position: relative;
     		z-index: 2;			
 			top: 19px;
+			left: 18px;
 			width: 39px;
 			height: 39px;
 			background: url("../images/back.png") $light center no-repeat;
@@ -45,10 +47,12 @@
 			.page-title-small {
 				color: #333333;
 				position: relative;
+				z-index: 3;
 				top: 90px;
 				transition: all 0.4s;
 				font-size: 20px;
-				padding-top: 22px;				
+				line-height: 80px;
+				cursor: pointer;
 			}
 
 			.show {
@@ -57,4 +61,8 @@
 			}		
 		}
 	}
+}
+
+.shadow {
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03);
 }

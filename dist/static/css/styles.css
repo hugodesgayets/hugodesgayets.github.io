@@ -67,8 +67,8 @@ table {
   font-weight: 500;
   font-style: normal; }
 body {
-  font: 1.143em / 1.9em "OpenSanss", sans-serif;
-  color: #9FA0A5;
+  font: 1em / 1.9em "OpenSanss", sans-serif;
+  color: #333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
@@ -81,8 +81,8 @@ h1 {
 a {
   text-decoration: none; }
   a.link {
-    color: #9FA0A5;
-    border-bottom: 1px solid #9FA0A5;
+    color: #333333;
+    border-bottom: 1px solid #333333;
     padding-bottom: 1px;
     transition: ease 0.1s; }
     a.link:hover {
@@ -97,15 +97,15 @@ a {
   width: 100%; }
   .navbar .inner {
     position: absolute;
-    left: 18px;
-    right: 18px;
+    left: 0px;
+    right: 0px;
     height: 75px;
-    background-color: white;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03); }
+    background-color: white; }
     .navbar .inner .back-btn {
       position: relative;
       z-index: 2;
       top: 19px;
+      left: 18px;
       width: 39px;
       height: 39px;
       background: url("../images/back.png") #E8E8E8 center no-repeat;
@@ -131,13 +131,18 @@ a {
       .navbar .inner .title-container .page-title-small {
         color: #333333;
         position: relative;
+        z-index: 3;
         top: 90px;
         transition: all 0.4s;
         font-size: 20px;
-        padding-top: 22px; }
+        line-height: 80px;
+        cursor: pointer; }
       .navbar .inner .title-container .show {
         top: 0;
         transition: all 0.4s; }
+
+.shadow {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03); }
 
 body {
   height: 5000px; }
@@ -156,11 +161,11 @@ img, video {
   max-width: 600px; }
 
 .page-title-large {
+  font-size: 2em;
   padding: 150px 0 125px 0;
   text-align: center; }
 
 .article .title {
-  font-size: 20px;
   padding: 55px 0 35px 0; }
 .article .separator {
   width: 100%;
@@ -173,12 +178,11 @@ img, video {
 
 .editor {
   margin: 55px auto 70px auto;
-  background-color: #F3FAFB;
   border-radius: 3px; }
   .editor p {
     line-height: 1.7em;
-    padding: 25px 0px 25px 35px;
+    padding: 25px 0px 25px;
     font-family: "Menlo";
-    color: #4CC7D4; }
+    color: #4A90EE; }
 
 /*# sourceMappingURL=styles.css.map */

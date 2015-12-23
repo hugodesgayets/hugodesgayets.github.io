@@ -49,13 +49,13 @@
 }
 
 
-$primary: #9FA0A5;
+// $primary: #9FA0A5;
 $dark: #333333; 
 $light: #E8E8E8;
 
 body {
-	font: 1.143em / 1.9em "OpenSanss", sans-serif;
-	color: $primary;
+	font: 1em / 1.9em "OpenSanss", sans-serif;
+	color: $dark;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -7,9 +7,11 @@ $(document).ready(function(){
 
 		if (scroll >= 120) {
 			$(".page-title-small").addClass("show");
+			$(".inner").addClass("shadow");
 		}
 		else {
-			$(".page-title-small").removeClass("show");		
+			$(".page-title-small").removeClass("show");
+			$(".inner").removeClass("shadow");	
 		}
 	
 	});

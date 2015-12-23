@@ -5,8 +5,8 @@
 a {
 	text-decoration: none;
 	&.link {
-		color: $primary;
-		border-bottom: 1px solid $primary;
+		color: $dark;
+		border-bottom: 1px solid $dark;
 		padding-bottom: 1px;
 		transition: ease 0.1s;
 		&:hover {
