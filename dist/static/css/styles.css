@@ -43,53 +43,50 @@ table {
   font-weight: 200;
   font-style: normal; }
 @font-face {
-  font-family: 'OpenSanss';
+  font-family: 'Roboto';
   src: url("../css/fonts/OpenSans/OpenSans-Light.eot");
-  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Light.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Light.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Light.svg") format("svg");
+  src: local("☺"), url("../css/fonts/Roboto/Roboto-Light.woff") format("woff"), url("../css/fonts/Roboto/Roboto-Light.ttf") format("truetype"), url("../css/fonts/Roboto/Roboto-Light.svg") format("svg");
   font-weight: 300;
   font-style: normal; }
 @font-face {
-  font-family: 'OpenSanss';
-  src: url("../css/fonts/OpenSans/OpenSans-Regular.eot");
-  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Regular.svg") format("svg");
+  font-family: 'Roboto';
+  src: url("../css/fonts/Roboto/Roboto-Regular.eot");
+  src: local("☺"), url("../css/fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../css/fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../css/fonts/Roboto/Roboto-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal; }
-@font-face {
-  font-family: 'OpenSanss';
-  src: url("../css/fonts/OpenSans/OpenSans-Semibold.eot");
-  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Semibold.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Semibold.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Semibold.svg") format("svg");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'OpenSanss';
-  src: url("../css/fonts/OpenSans/OpenSans-Bold.eot");
-  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Bold.svg") format("svg");
-  font-weight: 500;
-  font-style: normal; }
 body {
-  font: 1em / 1.9em "OpenSanss", sans-serif;
-  color: #333333;
+  font: 18px / 30px "Roboto", sans-serif;
+  font-weight: 300;
+  color: #B8BBBF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
 
 h1 {
   font-size: 1.5em;
-  color: #333333;
+  color: #000000;
   line-height: 1.5; }
 
 a {
   text-decoration: none; }
   a.link {
-    color: #333333;
-    border-bottom: 1px solid #333333;
+    color: #000000;
+    border-bottom: 1px solid #000000;
     padding-bottom: 1px;
     transition: ease 0.1s; }
     a.link:hover {
-      color: #333333;
-      border-bottom: 1px solid #333333; }
+      color: #000000;
+      border-bottom: 1px solid #000000; }
     a.link:active {
       opacity: 0.8; }
+
+.btn {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+  border: 1px solid #e8e8e8;
+  padding: 10px 10px 10px 10px;
+  display: inline-block; }
 
 .navbar {
   font-size: 40px;
@@ -108,7 +105,8 @@ a {
       left: 18px;
       width: 39px;
       height: 39px;
-      background: url("../images/back.png") #E8E8E8 center no-repeat;
+      border: 1px solid #E8E8E8;
+      background: url("../images/back.png") center no-repeat;
       background-size: 33.3%;
       border-radius: 5px;
       background-position-x: 12px;
@@ -155,6 +153,11 @@ img, video {
   margin: auto;
   padding: 0 30px;
   max-width: 800px; }
+
+.project {
+  margin: auto;
+  padding: 0 30px;
+  max-width: 1200px; }
 
 .wrapper {
   margin: auto;

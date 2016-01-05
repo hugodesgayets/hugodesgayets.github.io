@@ -19,7 +19,8 @@
 			left: 18px;
 			width: 39px;
 			height: 39px;
-			background: url("../images/back.png") $light center no-repeat;
+			border: 1px solid $light;
+			background: url("../images/back.png") center no-repeat;
 			background-size: 33.3%;
 			border-radius: 5px;
 			background-position-x: 12px;
