@@ -9,34 +9,44 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../css/fonts/OpenSans/OpenSans-Light.eot');
-  src: local('☺'),   	url('../css/fonts/Roboto/Roboto-Light.woff')
-  format('woff'), 		url('../css/fonts/Roboto/Roboto-Light.ttf')
-  format('truetype'),	url('../css/fonts/Roboto/Roboto-Light.svg') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../css/fonts/Roboto/Roboto-Regular.eot');
-  src: local('☺'),   	url('../css/fonts/Roboto/Roboto-Regular.woff')
-  format('woff'), 		url('../css/fonts/Roboto/Roboto-Regular.ttf')
-  format('truetype'),	url('../css/fonts/Roboto/Roboto-Regular.svg') format('svg');
+  font-family: 'Gotham';
+  src: url('../css/fonts/gotham/gotham-rounded-book.eot');
+  src: local('☺'),    url('../css/fonts/gotham/gotham-rounded-book.woff')
+  format('woff'),     url('../css/fonts/gotham/gotham-rounded-book.ttf')
+  format('truetype'), url('../css/fonts/gotham/gotham-rounded-book.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url('../css/fonts/OpenSans/OpenSans-Light.eot');
+//   src: local('☺'),   	url('../css/fonts/Roboto/Roboto-Light.woff')
+//   format('woff'), 		url('../css/fonts/Roboto/Roboto-Light.ttf')
+//   format('truetype'),	url('../css/fonts/Roboto/Roboto-Light.svg') format('svg');
+//   font-weight: 300;
+//   font-style: normal;
+// }
 
-$primary: #B8BBBF;
-$dark: #000000; 
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url('../css/fonts/Roboto/Roboto-Regular.eot');
+//   src: local('☺'),   	url('../css/fonts/Roboto/Roboto-Regular.woff')
+//   format('woff'), 		url('../css/fonts/Roboto/Roboto-Regular.ttf')
+//   format('truetype'),	url('../css/fonts/Roboto/Roboto-Regular.svg') format('svg');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+
+$primary: #B7B7BF;
+$dark: #19191F; 
 $light: #E8E8E8;
 
 body {
-	font: 18px / 30px "Roboto", sans-serif;
+	font: 18px / 27px "Gotham", sans-serif;
   font-weight: 300;
-	color: $primary;
+	color: $dark;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -44,7 +54,7 @@ body {
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 18px;
 	color: $dark;
 	line-height: 1.5;
 }
