@@ -37,38 +37,29 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Menlo';
-  src: url("../css/fonts/Menlo/Menlo-Regular.eot");
-  src: local("☺"), url("../css/fonts/Menlo/Menlo-Regular.woff") format("woff"), url("../css/fonts/Menlo/Menlo-Regular.ttf") format("truetype"), url("../css/fonts/Menlo/Menlo-Regular.svg") format("svg");
-  font-weight: 200;
-  font-style: normal; }
-@font-face {
-  font-family: 'Gotham';
-  src: url("../css/fonts/gotham/gotham-rounded-book.eot");
-  src: local("☺"), url("../css/fonts/gotham/gotham-rounded-book.woff") format("woff"), url("../css/fonts/gotham/gotham-rounded-book.ttf") format("truetype"), url("../css/fonts/gotham/gotham-rounded-book.svg") format("svg");
-  font-weight: 400;
+  font-family: 'OpenSans';
+  src: url("../css/fonts/OpenSans/OpenSans-Regular.eot");
+  src: local("☺"), url("../css/fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../css/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"), url("../css/fonts/OpenSans/OpenSans-Regular.svg") format("svg");
+  font-weight: 300;
   font-style: normal; }
 body {
-  font: 18px / 27px "Gotham", sans-serif;
+  font: 18px / 27px "OpenSans", sans-serif;
   font-weight: 300;
-  color: #19191F;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility; }
+  color: #17171c; }
 
 h1 {
   font-size: 18px;
-  color: #19191F;
+  color: #17171c;
   line-height: 1.5; }
 
 a {
   text-decoration: none; }
   a.link {
-    color: #19191F;
+    color: #17171c;
     border-bottom: 1px solid white;
     transition: ease 0.1s; }
     a.link:hover {
-      border-bottom: 1px solid #19191F; }
+      border-bottom: 1px solid #17171c; }
     a.link:active {
       opacity: 0.8; }
 
@@ -163,6 +154,9 @@ img, video {
   padding: 90px 0 40px 0; }
 .article img {
   padding-bottom: 40px; }
+.article .quote {
+  font-size: 16px;
+  color: #a7a7ac; }
 .article .separator {
   width: 100%;
   height: 1px;
@@ -189,7 +183,7 @@ img, video {
     .welcome .me p {
       text-align: center; }
     .welcome .me .function {
-      color: #B7B7BF; }
+      color: #a7a7ac; }
 
 .editor {
   margin: 40px auto 0px auto;
@@ -198,7 +192,7 @@ img, video {
     font-family: "Menlo";
     font-size: 15px;
     line-height: 30px;
-    color: #B7B7BF;
+    color: #a7a7ac;
     border-radius: 5px;
     border: 1px solid #eee;
     padding: 30px 35px; }
