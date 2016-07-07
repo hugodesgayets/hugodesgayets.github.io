@@ -1,52 +1,52 @@
-// @font-face {
-//   font-family: 'Menlo';
-//   src: url('../css/fonts/Menlo/Menlo-Regular.eot');
-//   src: local('☺'),   	url('../css/fonts/Menlo/Menlo-Regular.woff')
-//   format('woff'), 		url('../css/fonts/Menlo/Menlo-Regular.ttf')
-//   format('truetype'),	url('../css/fonts/Menlo/Menlo-Regular.svg') format('svg');
-//   font-weight: 200;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Gotham';
-//   src: url('../css/fonts/gotham/gotham-rounded-book.eot');
-//   src: local('☺'),    url('../css/fonts/gotham/gotham-rounded-book.woff')
-//   format('woff'),     url('../css/fonts/gotham/gotham-rounded-book.ttf')
-//   format('truetype'), url('../css/fonts/gotham/gotham-rounded-book.svg') format('svg');
-//   font-weight: 400;
-//   font-style: normal;
-// }
-
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../css/fonts/OpenSans/OpenSans-Regular.eot');
-  src: local('☺'),   	url('../css/fonts/OpenSans/OpenSans-Regular.woff')
-  format('woff'), 		url('../css/fonts/OpenSans/OpenSans-Regular.ttf')
-  format('truetype'),	url('../css/fonts/OpenSans/OpenSans-Regular.svg') format('svg');
-  font-weight: 300;
+  font-family: 'Lab';
+  src: url('../css/fonts/Lab/LabGrotesque-Regular.eot');
+  src: local('☺'),    url('../css/fonts/Lab/LabGrotesque-Regular.woff')
+  format('woff'),     url('../css/fonts/Lab/LabGrotesque-Regular.ttf')
+  format('truetype'), url('../css/fonts/Lab/LabGrotesque-Regular.svg') format('svg');
+  font-weight: 400;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Executivv';
+  src: url('../css/fonts/executive/Executive-Regular.eot');
+  src: local('☺'),    url('../css/fonts/executive/Executive-Regular.woff')
+  format('woff'),     url('../css/fonts/executive/Executive-Regular.ttf')
+  format('truetype'), url('../css/fonts/executive/Executive-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
 
-$primary: #a7a7ac;
-$dark: #17171c; 
-$light: #E8E8E8;
+@font-face {
+  font-family: 'Menlo';
+  src: url('../css/fonts/Menlo/Menlo-Regular.eot');
+  src: local('☺'),    url('../css/fonts/Menlo/Menlo-Regular.woff')
+  format('woff'),     url('../css/fonts/Menlo/Menlo-Regular.ttf')
+  format('truetype'), url('../css/fonts/Menlo/Menlo-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$primary: #555;
+$dark: #000; 
+$secondary: #888;
 
 body {
-	font: 18px / 27px "OpenSans", sans-serif;
-  font-weight: 300;
-	color: $dark;
-
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
-    // text-rendering: optimizeLegibility;	
+  font: 20px / 1.55em "Lab", sans-serif;
+  font-weight: 400;
+	color: $primary;
+  letter-spacing: 0.5px;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // text-rendering: optimizeLegibility;	
 }
 
 h1 {
-	font-size: 18px;
+	font-size: 20px;
 	color: $dark;
 	line-height: 1.5;
+
 }
 
 

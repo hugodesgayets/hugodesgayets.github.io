@@ -85,7 +85,7 @@ module.exports = function(grunt) {
 				files: {
 					'dist/index.html' : ['src/index.ejs'],
 					'dist/page.html' : ['src/page.ejs'],
-					// 'dist/jobs.html' : ['src/jobs.ejs'],
+					'dist/page-project.html' : ['src/page-project.ejs'],
 					// 'dist/support.html' : ['src/support.ejs'],
 					// 'dist/press.html' : ['src/press.ejs'],
 					// 'dist/legal.html' : ['src/legal.ejs'],

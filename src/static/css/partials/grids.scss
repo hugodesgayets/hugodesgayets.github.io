@@ -1,7 +1,12 @@
 $margin: 55px auto 70px auto;
 
 body {
+	margin: 0;
 
+}
+
+section {
+	background-color: white;
 }
 
 img, video {
@@ -16,26 +21,86 @@ img, video {
 
 
 
+.container	{
+	width: 100%;
+	
+	.separator {
+		width: 100%;
+		height: 1px;
+		background-color: #E4E4E4;
+	}
+
+	.wrapper {
+		position: relative;
+		margin: auto;
+		padding: 0 45px;	
+		max-width: 800px;
+	}
+
+	.project {
+	    position: relative;
+	    margin: 30px auto 150px auto;
+	    padding: 0;
 
 
-.container {
-	margin: auto;
-    padding: 0 30px;	
-	max-width: 800px;
+
+		.editor {
+		    margin: 40px auto 0px auto;
+		    border-radius: 3px;
+			.editor p {
+			    font-family: "Menlo";
+			    font-size: 15px;
+			    line-height: 30px;
+			    color: #a7a7ac;
+			    border-radius: 5px;
+			    border: 1px solid #eee;
+			    padding: 30px 35px;
+			}
+
+
+		}
+
+
+
+	    .caption {
+			max-width: 100%;
+			.description {
+				font-size: 16px;
+			}
+			.link {
+				font-size: 17px;
+			}
+	    }
+
+		.visual	{
+			max-width: 100%;
+		}
+
+	}
+
+
+
+
+
+
 }
 
-.project {
-	margin: auto;
-    padding: 0 30px;	
-	max-width: 1200px;
+
+
+
+
+
+@media screen and (max-width: 750px) {
+
 }
 
 
 
-.wrapper {
-	margin: auto;
-	max-width: 600px;
-}
+
+
+
+
+
 
 .page-title-large {
 	font-size: 30px;
@@ -71,25 +136,37 @@ img, video {
 
 // Home
 
-.welcome {
-	position: absolute;
+header {
+	position: relative;
+	height: 850px;
 	background-color: white;
-	height: 100%;
-	width: 100%;
-	.me {
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    left: 0;
-	    bottom: 0;
-	    margin: auto;
-	    width: 156px;
-	    height: 110px;
-	    p {
-	    	text-align: center;
-	    }
-	    .function {
-	    	color: $primary;
-	    }
+	hgroup {
+		font-size: 80px;
+		line-height: 84px;
+		letter-spacing: -1px;
+		#sayhi {
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			color: #c7c7cc;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: initial;
+		}
+		
+
+		p {
+			position: absolute;
+			top: 280px;
+		}
+
+
 	}
+
 }
+
+
+
+
+
+

@@ -26,4 +26,19 @@ $(document).ready(function(){
   });
 
 
+
+
+  // Typed.js
+      $(function(){
+        $("#typed").typed({
+            strings: ["hello.^1000 my name is hugo.<br> ^1000 i am a paris based interaction designer with a strong focus on usability."],
+            typeSpeed: 10,
+            backDelay: 2000,
+        });
+    });
+
+
+
+
+
 })  
