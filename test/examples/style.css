@@ -2,15 +2,20 @@
 body{
 
 
-	font-size: 14px;
-	font-family: "Verdana",Geneva,sans-serif;
+	font-size: 24px;
+	font-family: "lab grotesque", helvetica;
 	margin: 0;
 	padding: 0;
 	min-width: 480px;
+	color: #B7B7BD;
 }
 
-
-
+p{
+width: 660px;
+margin: auto;
+padding: 100px 0;
+line-height: 34px;
+}
 
 img{
 
@@ -27,7 +32,7 @@ img{
 		height: auto;
 	}
 .container {
-	width: 3016px;
+	width: 6000px;
     height: 800px;
     background: url(thumbnails/Board.png) center no-repeat;
     background-size: cover;
