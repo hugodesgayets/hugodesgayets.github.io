@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hugo des Gayets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif!important;
+        font-size: 17px;
+        line-height: 1.4;
+        /* background-color: #111; */
+        color: #aaa;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: none;
+    }
+    .title {
+        position: absolute;
+        z-index: 10;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 10px 30px;
+
+    }
+
+    .caption {
+        font-size: 12px;
+            text-align: left;
+            width: 200px;
+            background-color: white;
+            margin-right: -200px;
+        /*position: absolute;
+        bottom: 20px;*/
+        /*margin: auto;
+        left: 0;
+        right: 0;*/
+    }
+    .close {
+        top: 25px;
+        right: 25px;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #e4e4e4;
+        border-radius: 100%;
+        z-index: 10;: 100%;
+        cursor: pointer;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    img {
+        height: 100%;
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <p class="title">
+        Mapstr <br>
+        <span style="color: #DDD;">Product Designer</span>
+    </p>
+
+    <div class="close">
+
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/0.png">
+                <p class="caption">
+                    Product Icon<br>
+                </p>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../images/4.png">
+                <p class="caption">
+                    What's new<br>permission access
+                </p>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../images/3.png">
+                <p class="caption">
+                    <span style="color:black;">Explore</span>
+                    <br>Friends suggestions
+                </p>
+
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/2.png">
+                <p class="caption">
+                    Friends<br>
+                </p>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../images/1.png">
+                <p class="caption">
+                    Guides<br>
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/5.png">
+                <p class="caption">
+                    Guides<br>
+                </p>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 0,
+        keyboardControl: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        loop: false,
+        grabCursor: true,
+    });
+    </script>
+</body>
+</html>
