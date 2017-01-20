@@ -1,7 +1,10 @@
-.DS_Store
-node_modules
-build
-custom
-*.log
+# gulp project files
+node_modules/
+bower_components/
 
-.versions
+# temporary files
+.sass-cache
+
+# junk
+.DS_Store
+Thumbs.db
