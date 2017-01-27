@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mapstr</title>
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html, body {
+        position: relative;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif!important;
+        font-size: 17px;
+        line-height: 1.75;
+        /* background-color: #111; */
+        color: #888;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: none;
+
+    }
+
+
+    .wrapper {
+        max-width: 800px;
+        margin: auto;
+    }
+    .figure {
+        width: 800px;
+        height: 600px;
+        margin-bottom: 30px;
+        background-color: #F6F6F6;
+        border-radius: 1px;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        border-bottom: 1px solid #e6e6e6
+    }
+    .close {
+        width: 20px;
+        height: 20px;
+        background-color: #DDD;
+        border-radius: 10px;
+        margin: 21px;
+
+    }
+
+    header {
+        padding: 120px 0;
+    }
+    .article {
+        margin-bottom: 80px;
+    }
+    footer {
+        padding: 120px 0;
+    }
+   /* Typograhy */
+   h1 {
+       text-align: center;
+       color: #222;
+       padding: 30px 120px 20px 120px;
+   }
+   h2 {
+       font-size: 21px;
+           font-weight: 700;
+           color: #222;
+           padding: 30px 120px 20px 120px;
+   }
+   h3 {
+       font-size: 17px;
+       font-weight: 700;
+       padding: 10px 120px 10px 120px;
+   }
+
+   p, ul {
+     padding: 0 120px 20px 120px;
+   }
+
+   /* Content */
+   #branding {
+       background-image: url('images/img.png');
+       background-size: cover;
+   }
+   #spotlight {
+       background-image: url('images/spotlight.png');
+       background-size: cover;
+   }
+
+   /* Responsive */
+   @media only screen and (max-width:800px) {
+        .figure {
+            max-width: 100%;
+            height: 400px;
+        }
+        #branding, #spotlight {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+   }
+   @media only screen and (max-width:640px) {
+       h2 {
+           padding: 30px 32px 20px 32px;
+       }
+       h3 {
+           padding: 10px 32px 10px 32px;
+       }
+        p, ul {
+            padding: 0 32px 20px 32px;
+        }
+   }
+
+    </style>
+</head>
+<body>
+
+
+
+    <!-- Header -->
+    <div class="navbar">
+        <div class="close"></div>
+
+    </div>
+
+    <header></header>
+
+    <div class="wrapper">
+        <h1>Return - Find who you lend your stuff to.</h1>
+
+
+
+        <div class="article">
+
+            <div class="figure" id="return_header"></div>
+
+            <h2>Introduction</h2>
+            <h3>Where the f*** is my USB key?</h3>
+            <p>
+                When it comes to my friends, I am pretty generous
+                regarding my belongings. Unfortunately,
+                the outcomes is I forget about it.
+
+            </p>
+
+            <h3>Lending without caring</h3>
+            <p>
+                Return is a utility app that lets you assign something
+                to someone with a custom timer. On due dates, it sends
+                funny random messages to remind the borrower that it’s
+                about time… to return.
+
+            </p>
+
+            <h3>Focus on things that matters</h3>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer></footer>
+
+</body>
+</html>
