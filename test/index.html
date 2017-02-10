@@ -11,237 +11,144 @@
         margin: 0;
         padding: 0;
     }
-    html, body {
-        position: relative;
-        height: 100%;
+
+    body, html {
         margin: 0;
         padding: 0;
-    }
-    body {
-        font-family: "lab grotesque";
-        font-size: 20px;
-        line-height: 1.6;
-        /*letter-spacing: 0.5px;*/
-
-        /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif!important;*/
+        width: 100%;
+        height: 100%;
         font-family: "fakt pro";
-        font-size: 18px;
-        line-height: 1.75;
-
-
-        /* background-color: #111; */
+        font-size: 21px;
+        line-height: 1.6;
         color: #000;
         -webkit-font-smoothing: antialiased;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
         -webkit-text-size-adjust: none;
+        letter-spacing: 0.1px;
+    }
+    p {
+         padding: 0 0px 20px 0px;
+    }
+
+    h2 {
+        padding: 30px 0px 20px 0px;
+        font-size: 23px;
+        letter-spacing: 0;
+        font-weight: 600;
+    }
+    h3 {
+        padding: 30px 0px 20px 0px;
+        font-size: 18px;
+    }
+
+    p, h2, h3 {
+        margin: auto;
+        max-width: 680px;
 
     }
 
+    img {
+        max-width: 100%;
+        padding: 40px 0;
+    }
 
+
+    .container {
+        width: 100%;
+    }
     .wrapper {
         max-width: 1020px;
         margin: auto;
     }
-    .image {
-        background-color: #f8f9fa;
-        margin-bottom: 30px;
-        max-width: 1020px;
-        padding: 40px 0px;
-        margin: auto;
 
+    .navbar {
+        position: fixed;
     }
-    .figure {
-        height: 840px;
-    }
-
-
-
-    header {
-        padding: 120px 0;
-    }
-    .article {
-        margin-bottom: 80px;
-    }
-    footer {
-        padding: 120px 0;
-    }
-   /* Typograhy */
-   h1 {
-       font-size: 56px;
-       max-width: 640px;
-       margin: auto;
-       text-align: center;
-       padding: 30px 0px 20px 0px;
-       font-weight: 600;
-
-       padding: 30px 0px 20px 0px;
-   }
-   h2 {
-       max-width: 640px;
-       margin: auto;
-       font-size: 24px;
-           font-weight: 700;
-
-           padding: 30px 0px 20px 0px;
-   }
-   h3 {
-       max-width: 640px;
-       margin: auto;
-       font-size: 20px;
-       font-weight: 700;
-       padding: 10px 0px 10px 0px;
-   }
-
-   p, ul {
-     margin: auto;
-     padding: 0 0px 20px 0px;
-   }
-
-   /* Content */
-   #branding {
-       background-image: url('images/img.png');
-       background-size: contain;
-       background-repeat: no-repeat;
-       background-position: center;
-   }
-   #spotlight {
-       background-image: url('images/test.gif');
-       background-size: cover;
-   }
-
-   /* Responsive */
-   @media only screen and (max-width:1120px) {
-
-       .navbar {
-           position: fixed;
-       }
-
-
-        .figure {
-            max-width: 100%;
-            height: 400px;
-        }
-        #branding, #spotlight {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-   }
-   @media only screen and (max-width:640px) {
-        body {
-            font-size: 17px;
-        }
-
-        .navbar {
-            height: 64px;
-        }
-       h2 {
-           padding: 30px 20px 20px 20px;
-       }
-       h3 {
-           padding: 10px 20px 10px 20px;
-       }
-        p, ul {
-            padding: 0 20px 20px 20px;
-        }
-   }
-
-
-
-
-
-
-
-
-   body, html {
-       margin: 0;
-       padding: 0;
-       height: 100%;
-       width: 100%;
-   }
-
-   .navbar {
-       width: 100%;
-       height: 75px;
-       position: fixed;
-
-       -webkit-transition: all 0.3s ease;
-       -moz-transition: all 0.3s ease;
-       -o-transition: all 0.3s ease;
-       transition: all 0.3s ease;
-   }
-
-    .menu {
-        height: 75px;
+    #menu-center {
         background-color: white;
         border-bottom: 1px solid #e6e6e6;
+        height: 70px;
     }
-
-
-    ul li {
+    #menu-center ul {
+        margin: 0px 0 0 0;
+    }
+    #menu-center ul li {
         list-style: none;
+        display: inline;
+    }
+    .active {
+        color: black;
+        border-bottom: 2px solid black;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        /* line-height: 75px; */
         width: 25%;
         float: left;
         text-align: center;
-   }
-   .active {
-           color: black;
-           text-decoration: none;
-           border-bottom: 1px solid black;
+        padding: 21px 0 15px 0;
+        font-size: 21px;
+        color: rgba(0,0,0,0.5);
 
-           display: block;
+    }
 
-   }
-   a {
-       font-size: 24px;
-           color: black;
-           text-decoration: none;
-           line-height: 85px;
-           color: rgba(0,0,0,0.5);
-           height: 75px;
+    .block {
+        height: 120px;
+    }
 
-
-   }
-   #home {
-       background-color: grey;
-
-   }
-   #portfolio {
-
-       height: 100%;
-       width: 100%;
-   }
-   #about {
-
-       height: 200px;
-       width: 100%;
-   }
-   #contact {
-
-       height: 100%;
-       width: 100%;
-   }
+    #intro {
+        width: 100%;
+    }
+    #research {
+        width: 100%;
+    }
+    #branding {
+        width: 100%;
+    }
+    #product {
+        width: 100%;
+    }
 
 
 
 
+    /* Responsive */
+    @media only screen and (max-width:1120px) {
+
+        .navbar {
+            position: fixed;
+        }
 
 
+         .figure {
+             max-width: 100%;
+             height: 400px;
+         }
+         #branding, #spotlight {
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: contain;
+         }
+    }
+    @media only screen and (max-width:640px) {
+         body {
+             font-size: 17px;
+         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+         .navbar {
+             height: 64px;
+         }
+        h2 {
+            padding: 30px 20px 20px 20px;
+        }
+        h3 {
+            padding: 10px 20px 10px 20px;
+        }
+         p, ul {
+             padding: 0 20px 20px 20px;
+         }
+    }
 
 
 
@@ -250,158 +157,127 @@
 </head>
 <body>
 
-
-
-
-
-
-
-
-
-
-
-
-<div class="navbar">
-
-        <div class="wrapper menu">
+    <div class="container navbar">
+        <div id="menu-center" class="wrapper">
             <ul>
-                <li><a class="active" href="#home">Introduction</a>
+                <li><a class="active" href="#intro">Introduction</a>
+
+                    <li><a href="#branding">Branding</a>
+
+                    </li>
+                    <li><a href="#product">Product</a>
+
+                    </li>
+
 
                 </li>
-                <li><a href="#portfolio">Branding</a>
+                <li><a href="#research">Tools</a>
 
                 </li>
-                <li><a href="#about">Research</a>
 
-                </li>
-                <li><a href="#contact">Product</a>
-
-                </li>
             </ul>
         </div>
-</div>
+    </div>
 
-
-    <div id="home">
+    <section id="intro">
         <div class="wrapper">
-            <p>
-            As an Interaction Designer, I was responsible for the UX and interface for the responsive web across mobile, tablet and desktop devices of urturn.com. I worked closely with the CEOs, engineering team, data analysts and visual designers to develop and improve our users’ experience by focusing on goals that drive completion of the key parts of the funnel. My tasks covered a broad spectrum of specialities including strategy, ideas sessions, wireframes, user testing, prototypes, UI and UX design and creation of the Urturn’s mini-apps.
-            I was responsible of bring social interest to the app
+            <div class="block"></div>
 
-            </p>
-        </div>
+                <p>
+                    • Intro: Why I joined <br>
+• Story / Started on MVP (ios public beta)<br>
+• Main Project:<br>
+- Both iOS and Android<br>
+-<br>
+-<br>
+• Conclusion: Impact on Growth (?) - DAU rise<br>
+When I stared, Mapstr was in its early, close to the intial MVP. I was solely in charge of both UI and UX of mapstr.
+
+I worked on X projects Working on both sides was challenging because I had to adapt a very dualistic worklow: Make UX project get UI implement easily and vice versa. I was in a charge of building a team process.
 
 
-    </div>
-    <div id="portfolio">
 
-        <div class="article">
-            <h2>Branding</h2>
-            <div class="image">
-                <img src="https://d13yacurqjgara.cloudfront.net/users/475393/screenshots/3211615/icon.png" alt="">
-                <div class="figure" id="branding"></div>
+                </p>
             </div>
-            <p>When you look for inspiration among your friend and influencers, switching from a map to another one can be a bit exhasuting(!).
-            ‘Podium’ solve this probleme and let you browse top 10th places by categories. You can filter by Date or location and access to the best in seconds.</p>
-            <h3>The problem</h3>
-            <p>The problem is...</p>
-            <h3>Solution</h3>
-            <p>The problem is...</p>
         </div>
-
-
-    </div>
-    <div id="about">Hello</div>
-    <div id="contact"></div>
+    </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Header -->
-
-        <div class="navbar">
-            <img alt="" class="arrow-back" src="images/arrow_back_24px.svg" style=" padding: 23px; opacity: 0.2;">
-
-            <!-- <img alt="" class="email" src="images/email_24px.svg" style="float: right; padding-top: 28px; opacity: 0.2;"> -->
-        </div>
-
-    <header></header>
-
-    <div class="wrapper">
-        <h1>Mapstr</h1>
-
-        <p>
-As an Interaction Designer, I was responsible for the UX and interface for the responsive web across mobile, tablet and desktop devices of urturn.com. I worked closely with the CEOs, engineering team, data analysts and visual designers to develop and improve our users’ experience by focusing on goals that drive completion of the key parts of the funnel. My tasks covered a broad spectrum of specialities including strategy, ideas sessions, wireframes, user testing, prototypes, UI and UX design and creation of the Urturn’s mini-apps.
-            I was responsible of bring social interest to the app
-
-        </p>
-        <ul>
-            <li>Friends</li>
-        </ul>
-
-        <div class="article">
-            <h2>Branding</h2>
-            <div class="image">
-                <img src="https://d13yacurqjgara.cloudfront.net/users/475393/screenshots/3211615/icon.png" alt="">
-                <div class="figure" id="branding"></div>
+    <section id="branding">
+        <div class="wrapper">
+            <div class="block"></div>
+                <h2>Branding System</h2>
+                <p>Design product icon, logotypes and communications tools assets
+Icon set</p>
+                <img src="images/branding.png" alt="">
+                <img src="images/test.gif" alt="">
             </div>
-            <p>When you look for inspiration among your friend and influencers, switching from a map to another one can be a bit exhasuting(!).
-            ‘Podium’ solve this probleme and let you browse top 10th places by categories. You can filter by Date or location and access to the best in seconds.</p>
-            <h3>The problem</h3>
-            <p>The problem is...</p>
-            <h3>Solution</h3>
-            <p>The problem is...</p>
         </div>
+    </section>
 
-        <div class="article">
-            <h2>Spotlight Search</h2>
-            <div class="figure" id="spotlight"></div>
-            <p>When you look for inspiration among your friend and influencers, switching from a map to another one can be a bit exhasuting(!).
-            ‘Podium’ solve this probleme and let you browse top 10th places by categories. You can filter by Date or location and access to the best in seconds.</p>
+
+    <!-- Product  -->
+    <section id="product">
+        <div class="wrapper">
+            <div class="block"></div>
+                <h2>The Social experience</h2>
+                <p>
+                    Amongst every projects I was involved in, the most rewarding one was the design of the social experience. Allowing users interactions directly within the app was a major step for acquisition, as it was a core lever to our company's business growth.
+                </p>
+
+                <img src="images/img.png" alt="">
+                <p>
+                    So, based on research we first defined a user account model architecture. Then I was responsible for the complete UX, from the first run experience to the design, test phases and implementation of the profile features.
+                <br><br>
+
+                - First Run eX: Onboarding, signup process, markups…<br>
+                - Profile: Friends manager, activity center, data backups,…<br>
+                - Sharing: referral links
+
+                </p>
+                <h3>First run experience - Facebook signup flow and permission access</h3>
+                <img src="images/user-flow.png" alt="">
+                <p>permission flow model</p>
+                <h3>Early explorations</h3>
+                <img src="images/wireframes.png" alt="">
+                <img src="images/finaldesign.png" alt="">
+                <img src="images/proto.gif" alt="">
+                <img src="images/proto2.gif" alt="">
+                <p>
+                    Collect useful data with cool technology to track, measure and solve problems.
+                    <br>Then, convert trusthworthy user insights into beautiful, useable, meaningful features. Implement.
+                </p>
+            </div>
         </div>
+    </section>
 
 
-        <div class="article">
-            <h2>Branding</h2>
-            <div class="figure" id="#"></div>
-            <p>When you look for inspiration among your friend and influencers, switching from a map to another one can be a bit exhasuting(!).
-            ‘Podium’ solve this probleme and let you browse top 10th places by categories. You can filter by Date or location and access to the best in seconds.</p>
+
+    <section id="research">
+        <div class="wrapper">
+            <div class="block"></div>
+                <h2>Research</h2>
+                <p>
+                    Collect useful data with cool technology to track, measure and solve problems. Then, convert trusthworthy user insights into beautiful, useable, meaningful features. Implement.
+                </p>
+
+                <h2>Internal tools</h2>
+                <p>
+                    I built a web based reporting tool to let the team parse our user research outcomes more quickly.
+                    <br>    <br>
+This tool helps stakeholders vizualise relevant metrics in a beautiful way, and help prioritize funnels and make clever, well informed decision.
+<br>    <br>
+It includes latest bug reports, sorted user queries and selected metrics from our analytics. These were key resources to build roadmaps.
+<br>    <br>
+                </p>
+            </div>
         </div>
-
-        <div class="article">
-            <h2>Branding</h2>
-            <div class="figure" id="#"></div>
-            <p>When you look for inspiration among your friend and influencers, switching from a map to another one can be a bit exhasuting(!).
-            ‘Podium’ solve this probleme and let you browse top 10th places by categories. You can filter by Date or location and access to the best in seconds.</p>
-        </div>
-
-
-
-    </div>
+    </section>
 
 
 
 
-
-
-
-
-
-
-    <footer></footer>
 
 <script src="js/jquery-3.1.1.min.js"></script>
 
@@ -425,7 +301,7 @@ $(document).ready(function () {
         $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+2
-        }, 300, 'swing', function () {
+        }, 200, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
@@ -448,8 +324,6 @@ function onScroll(event){
 }
 
 </script>
-
-
 
 </body>
 </html>
