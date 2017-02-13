@@ -11,11 +11,12 @@
 	    padding:0;
     }
     body,html {
-    	width:100%;
-    	font-family:helvetica,arial,sans-serif;
-    	font-size:11px;
-    	line-height:1.7;
-    	color:#000;
+      margin: auto;
+      color: #000000;
+      font-family: "courier new";
+      font-size: 12px;
+      line-height: 1.45em;
+      background-color: #ffffff;
     }
     img {
     	max-width: 100%;
@@ -25,14 +26,17 @@
     	height: 45px;
     }
     .content {
-    	max-width: 600px;
-    	margin-left: 290px;
-    	padding-right: 35px;
+      max-width: 600px;
+      margin-left: 290px;
+      padding: 0 25px;
+      position: relative;
+      background-color: white;
+      margin-left: 265px;
+      z-index: 2;
     }
     /* Menu layout */
     #menu {
     	position: fixed;
-    	padding: 40px;
     	text-align:right;
     	height: 100%;
     }
@@ -40,20 +44,22 @@
     	margin:0px 0 0 0;
     	overflow-y:scroll;
     	height:100%;
+      padding:0 40px;
     }
     #menu ul li {
     	list-style:none;
     }
     .active {
-    	color:rgba(0,0,0,0.5);
+      background-color: #dcdcdc;
     }
     a {
     	color:black;
     	text-decoration:none;
+      padding: 0 3px;
     	/* line-height:75px;*/
     }
     a:hover {
-    	color:rgba(0,0,0,0.5);
+      cursor: pointer;
     }
     p {
     	padding: 50px 0 20px 0;
@@ -68,7 +74,21 @@
     <div id="menu">
         <ul>
 
-            <strong>Clémence de la Tour du Pin</strong>
+            <p><i>Work</i></p>
+
+            <li><a href="#sw01">Untitled(caduceus)</a></li>
+            <li><a href="#sw02">Interfaith Rack IX</a></li>
+            <li><a href="#sw03">fetish</a></li>
+            <li><a href="#sw04">Anonymous</a></li>
+            <li><a href="#sw05">Swan</a></li>
+            <li><a href="#sw06">S_baby43</a></li>
+            <li><a href="#sw07">E3M4: Limbo</a></li>
+            <li><a href="#sw08">E2M2: Containment Area</a></li>
+            <li><a href="#sw09">E3M4: House of Pain</a></li>
+            <li><a href="#sw10">CLOUD</a></li>
+            <li><a href="#sw11">Crimsonblood</a></li>
+            <li><a href="#sw12">Ozone</a></li>
+            <li><a href="#sw13">CSO1</a></li>
 
             <p><i>Selected Exhibitions</i></p>
 
@@ -89,30 +109,120 @@
             <li><a href="#se15">Brand, Nature and Teamwork</a></li>
             <li><a href="#se16">We outsourced everything..</a></li>
 
-            <p><i>Selected works</i></p>
+            <p><i>Some texts</i></p>
 
-            <li><a href="#sw01">Untitled(caduceus)</a></li>
-            <li><a href="#sw02">Interfaith Rack IX</a></li>
-            <li><a href="#sw03">fetish</a></li>
-            <li><a href="#sw04">Anonymous</a></li>
-            <li><a href="#sw05">Swan</a></li>
-            <li><a href="#sw06">S_baby43</a></li>
-            <li><a href="#sw07">E3M4: Limbo</a></li>
-            <li><a href="#sw08">E2M2: Containment Area</a></li>
-            <li><a href="#sw09">E3M4: House of Pain</a></li>
-            <li><a href="#sw10">CLOUD</a></li>
-            <li><a href="#sw11">Crimsonblood</a></li>
-            <li><a href="#sw12">Crimsonblood</a></li>
-            <li><a href="#sw13">Ozone</a></li>
-            <li><a href="#sw14">CSO1</a></li>
+            <li><a href="#txt01">Brand, Nature and Teamwork</a></li>
+            <li><a href="#txt02">We outsourced everything...</a></li>
 
-            <li><a href="#about">About</a></li>
+            <div class="block"></div>
 
         </ul>
     </div>
 
 
     <!-- !!! Make sure to order content exactly as the navigation to not break the scrolling focus !!! -->
+
+
+
+
+
+
+    <!-- ********** Work  ********** -->
+
+    <!-- sw01 — Untitled(caduceus) -->
+    <div class="content" id="sw01">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>Untitled(caduceus)</p>
+    </div>
+
+    <!-- sw02 — Interfaith Rack IX -->
+    <div class="content" id="sw02">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>Interfaith Rack IX</p>
+    </div>
+
+
+    <!-- sw03 — fetish -->
+    <div class="content" id="sw03">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>fetish</p>
+    </div>
+
+    <!-- sw04 — Anonymous -->
+    <div class="content" id="sw04">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>Anonymous</p>
+    </div>
+
+    <!-- sw05 — Swan -->
+    <div class="content" id="sw05">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>Swan</p>
+    </div>
+
+    <!-- sw06 — S_baby43 -->
+    <div class="content" id="sw06">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>S_baby43</p>
+    </div>
+
+    <!-- sw07 — E3M4: Limbo -->
+    <div class="content" id="sw07">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>E3M4: Limbo</p>
+    </div>
+
+    <!-- sw08 — E2M2: Containment Area -->
+    <div class="content" id="sw08">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>E2M2: Containment Area</p>
+    </div>
+
+    <!-- sw09 — E3M4: House of Pain -->
+    <div class="content" id="sw09">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>E3M4: House of Pain</p>
+    </div>
+
+    <!-- sw10 — CLOUD -->
+    <div class="content" id="sw10">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>CLOUD</p>
+    </div>
+
+    <!-- sw11 — Crimsonblood -->
+    <div class="content" id="sw11">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>Crimsonblood</p>
+    </div>
+
+    <!-- sw12 — Ozone -->
+    <div class="content" id="sw12">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>Ozone</p>
+    </div>
+
+    <!-- sw13 — CSO1 -->
+    <div class="content" id="sw13">
+        <div class="block"></div>
+        <img src="images/1.jpg" alt="">
+        <p>CSO1</p>
+    </div>
+
+
+
 
     <!-- ********** Selected Exhibitions ********** -->
 
@@ -230,7 +340,19 @@
 
 
 
+    <!-- ********** Some texts ********** -->
 
+    <!-- txt01 — Molecular Materiality by Arielle Bier, 2015 -->
+    <div class="content" id="txt01">
+        <div class="block"></div>
+        <p>Molecular Materiality by Arielle Bier, 2015</p>
+    </div>
+
+    <!-- txt02 — Interview with Matteo Mottin, ATP diary, 2015 -->
+    <div class="content" id="txt02">
+        <div class="block"></div>
+        <p>Interview with Matteo Mottin, ATP diary, 2015</p>
+    </div>
 
 
 <script src="js/jquery-3.1.1.min.js"></script>
