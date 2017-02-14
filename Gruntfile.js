@@ -1,11 +1,11 @@
 module.exports = function(grunt) {
 	// Load
 	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-copy');	
-  	grunt.loadNpmTasks('grunt-ejs');	
-	grunt.loadNpmTasks('grunt-contrib-watch');	
+	grunt.loadNpmTasks('grunt-contrib-copy');
+  	grunt.loadNpmTasks('grunt-ejs');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');	
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 
 
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 		        	src: '**',
 		        	dest: 'dist/static/videos',
 		        	filter: 'isFile'
-		     	}, {		     		
+		     	}, {
 		     		expand:true,
 		        	cwd:'src/static/js',
 		        	src: '**',
@@ -45,9 +45,9 @@ module.exports = function(grunt) {
 		        	cwd:'src/static/css/fonts',
 		        	src: '**',
 		        	dest: 'dist/static/css/fonts',
-		        	filter: 'isFile'		        	
+		        	filter: 'isFile'
 		     	}]
-		    }   
+		    }
 	    },
 
 		watch: {
@@ -84,16 +84,15 @@ module.exports = function(grunt) {
 			all: {
 				files: {
 					'dist/index.html' : ['src/index.ejs'],
-					'dist/page.html' : ['src/page.ejs'],
-					'dist/page-project.html' : ['src/page-project.ejs'],
+					'dist/project.html' : ['src/project.ejs'],
 					// 'dist/support.html' : ['src/support.ejs'],
 					// 'dist/press.html' : ['src/press.ejs'],
 					// 'dist/legal.html' : ['src/legal.ejs'],
-					// 'dist/terms.html' : ['src/terms.ejs'],																									
+					// 'dist/terms.html' : ['src/terms.ejs'],
 				},
 				ext: '.html',
 			}
-		}    	
+		}
 	})
 
 	// Tasks

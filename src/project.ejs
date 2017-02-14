@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project — desgayets.me</title>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="static/css/styles.css">
+    <%# <link rel="icon" type="image/png" href="static/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="static/images/favicon-16x16.png" sizes="16x16" />%>
+</head>
+
+<body>
+
+<%# Navigation %>
+	<div class="container navbar">
+	    <div id="menu-center" class="wrapper">
+	        <ul>
+	            <li><a class="active" href="#introduction">Introduction</a>
+
+	                <li><a href="#branding">Branding</a>
+
+	                </li>
+	                <li><a href="#prototyping">Prototyping</a>
+
+	                </li>
+
+
+	            </li>
+	            <li><a href="#design">Design</a>
+
+	            </li>
+
+	        </ul>
+	    </div>
+	</div>
+
+
+<% include ../src/partials/introduction.html %>
+<% include ../src/partials/branding.html %>
+<% include ../src/partials/prototyping.html %>
+<% include ../src/partials/design.html %>
+
+
+<script src="static/js/jquery-1.11.3.min.js"></script>
+<script src="static/js/main.js"></script>
+
+</body>
+</html>

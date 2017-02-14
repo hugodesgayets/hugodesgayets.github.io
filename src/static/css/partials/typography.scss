@@ -28,27 +28,26 @@
   font-style: normal;
 }
 
-$primary: #555;
-$dark: #000; 
-$secondary: #888;
 
-body {
-  font: 20px / 1.55em "Lab", sans-serif;
+
+// Fakt
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../css/fonts/Fakt/FaktPro-Normal.eot');
+  src: local('☺'),    url('../css/fonts/Fakt/FaktPro-Normal.woff')
+  format('woff'),     url('../css/fonts/Fakt/FaktPro-Normal.ttf')
+  format('truetype'), url('../css/fonts/Fakt/FaktPro-Normal.svg') format('svg');
   font-weight: 400;
-	color: $primary;
-  letter-spacing: 0.5px;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-  // text-rendering: optimizeLegibility;	
+  font-style: normal;
 }
 
-h1 {
-	font-size: 20px;
-	color: $dark;
-	line-height: 1.5;
-
+@font-face {
+  font-family: 'Fakt';
+  src: url('../css/fonts/Fakt/FaktPro-SemiBold.eot');
+  src: local('☺'),    url('../css/fonts/Fakt/FaktPro-SemiBold.woff')
+  format('woff'),     url('../css/fonts/Fakt/FaktPro-SemiBold.ttf')
+  format('truetype'), url('../css/fonts/Fakt/FaktPro-SemiBold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
 }
-
-
-
-
