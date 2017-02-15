@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Soundboard</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 24px;
+        }
+
+        img {
+            width: 130px;
+            margin: 10px 0 0 10px;
+        }
+        .container {
+            max-width: 720px;
+            margin: auto;
+            height: 840px;
+            margin-top: 100px;
+            border: 1px solid #F2F2F2;
+        }
+
+        section {
+            width: 150px;
+            height: 180px;
+            float: left;
+            padding: 0 15px;
+        }
+
+        .number {
+            font: 13px/1.7 "Helvetica Neue", sans-serif;
+            font-weight: 400;
+            color: #d0d0d0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .number:before {
+            content: "pad "
+        }
+
+        .pad {
+            width: 150px;
+            height: 150px;
+            background-color: #F2F2F2;
+            border: 3px;
+        }
+        
+
+        .pad:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- Soundboard -->
+<div class="container">
+
+    <section id="chewie">
+        <div class="number">13</div>
+        <div class="pad">
+            <img src="images/chewie.png" alt="">
+        </div>
+    </section>
+
+    <section id="bam">
+        <div class="number">14</div>
+        <div class="pad">
+            <img src="images/bam.png" alt="">
+        </div>
+    </section>
+
+    <section id="bam_2">
+        <div class="number">15</div>
+        <div class="pad">
+            <img src="images/bam_2.png" alt="">
+        </div>
+    </section>
+
+    <section id="fuck">
+        <div class="number">16</div>
+        <div class="pad">
+            <img src="images/fuck.png" alt="">
+        </div>
+    </section>
+
+    <section id="america">
+        <div class="number">9</div>
+        <div class="pad">
+            <img src="images/america.png" alt="">
+        </div>
+    </section>
+
+    <section id="coucou">
+        <div class="number">10</div>
+        <div class="pad">
+            <img src="images/coucou.png" alt="">
+        </div>
+    </section>
+
+    <section id="wilhelm">
+        <div class="number">11</div>
+        <div class="pad">
+            <img src="images/wilhelm.png" alt="">
+        </div>
+    </section>
+
+    <section id="#">
+        <div class="number">12</div>
+        <div class="pad"></div>
+    </section>
+
+    <section id="#">
+        <div class="number">5</div>
+        <div class="pad"></div>
+    </section>
+
+    <section id="#">
+        <div class="number">6</div>
+        <div class="pad"></div>
+    </section>
+
+    <section id="#">
+        <div class="number">7</div>
+        <div class="pad"></div>
+    </section>
+
+    <section id="#">
+        <div class="number">8</div>
+        <div class="pad"></div>
+    </section>
+
+    <section id="#">
+        <div class="number">1</div>
+        <div class="pad"></div>
+    </section>
+
+    <section id="#">
+        <div class="number">2</div>
+        <div class="pad"></div>
+    </section>
+
+    <section id="#">
+        <div class="number">3</div>
+        <div class="pad"></div>
+    </section>
+
+    <section id="#">
+        <div class="number">4</div>
+        <div class="pad"></div>
+    </section>
+
+</div>
+
+<div id="wrap">&nbsp;</div>
+
+</body>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function() {
+
+    $('#chewie').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/chewie.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#bam').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/bam.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#bam_2').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/bam_2.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#fuck').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/fuck.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#america').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/america.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#coucou').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/coucou.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#wilhelm').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/wilhelm.mp3" autostart="true" hidden="true"></embed>');
+    });
+
+});
+</script>
+
+</html>
