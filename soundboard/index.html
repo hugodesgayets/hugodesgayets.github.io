@@ -51,7 +51,7 @@
             background-color: #F2F2F2;
             border: 3px;
         }
-        
+
 
         .pad:hover {
             opacity: 0.8;
@@ -116,19 +116,25 @@
         </div>
     </section>
 
-    <section id="#">
+    <section id="encule">
         <div class="number">12</div>
-        <div class="pad"></div>
+        <div class="pad">
+            <img src="images/encule.png" alt="">
+        </div>
     </section>
 
-    <section id="#">
+    <section id="huh">
         <div class="number">5</div>
-        <div class="pad"></div>
+        <div class="pad">
+            <img src="images/huh.png" alt="">
+        </div>
     </section>
 
-    <section id="#">
+    <section id="gueule">
         <div class="number">6</div>
-        <div class="pad"></div>
+        <div class="pad">
+            <img src="images/gueule.png" alt="">
+        </div>
     </section>
 
     <section id="#">
@@ -193,6 +199,15 @@ $(document).ready( function() {
     });
     $('#wilhelm').click(function(){
        $('#wrap').append('<embed id="embed_player" src="sounds/wilhelm.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#encule').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/encule.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#huh').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/huh.mp3" autostart="true" hidden="true"></embed>');
+    });
+    $('#gueule').click(function(){
+       $('#wrap').append('<embed id="embed_player" src="sounds/gueule.mp3" autostart="true" hidden="true"></embed>');
     });
 
 });
