@@ -9,9 +9,9 @@ body, html {
 	width: 100%;
 	height: 100%;
 	font-family: "Fakt";
-	font-size: 21px;
-	line-height: 1.6;
-	color: #000;
+	font-size: 20px;
+	line-height: 1.55;
+	color: #323232;
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-text-size-adjust: none;
@@ -23,7 +23,7 @@ p {
 
 h2 {
 	padding: 30px 0px 20px 0px;
-	font-size: 23px;
+	font-size: 24px;
 	letter-spacing: 0;
 	font-weight: 600;
 }
@@ -34,7 +34,7 @@ h3 {
 
 p, h2, h3 {
 	margin: auto;
-	max-width: 680px;
+	max-width: 700px;
 
 }
 
@@ -50,43 +50,135 @@ img {
 .wrapper {
 	max-width: 960px;
 	margin: auto;
+	position: relative;
 }
+
+section {
+	.wrapper {
+		padding-top: 80px;
+	}
+}
+
+
+a {
+	text-decoration: none;
+	
+}
+
+
+// Close
+
+.banner {
+	position: relative;;
+	top: 0;
+	height: 69px;
+	background-color: #fcfcfc;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+// Navigation
 
 .navbar {
-	position: fixed;
-}
-#menu-center {
-	background-color: white;
-	border-bottom: 1px solid #e6e6e6;
-	height: 70px;
-}
-#menu-center ul {
-	margin: 0px 0 0 0;
-}
-#menu-center ul li {
-	list-style: none;
-	display: inline;
-}
-.active {
-	color: black;
-	border-bottom: 2px solid black;
-}
-a {
-	color: black;
-	text-decoration: none;
-	/* line-height: 75px; */
-	width: 25%;
-	float: left;
-	text-align: center;
-	padding: 21px 0 15px 0;
-	font-size: 21px;
-	color: rgba(0,0,0,0.5);
+	position: relative;;
+	z-index: 10;
 
+	#menu-center {
+		background-color: white;
+		border-bottom: 1px solid #e6e6e6;
+		height: 70px;
+		li {
+			list-style: none;
+			display: inline;
+		}
+		a {
+			width: 25%;
+		    float: left;
+		    text-align: center;
+		    padding: 23px 0 16px 0;
+		    color: rgba(0, 0, 0, 0.5);
+		}
+		.active {
+			color: black;
+			border-bottom: 1px solid #222;
+		}
+	}
 }
 
 .block {
-	height: 120px;
+	height: 70px;
 }
+
+.sticky {
+	position: fixed;
+	top: 0px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+// Bottom Navigation
+
+.footer-nav {
+
+	.wrapper {
+		border-top: 1px solid #e6e6e6;
+	}
+
+	a {
+		position: absolute;
+		height: 90px;
+		color: inherit;
+	}
+
+	// Previous
+	.previous {
+	    width: 50%;
+		span {
+			position: absolute;
+		    top: 30px;
+		    padding-left: 36px;
+		}
+		span:before {
+			top: 1px;
+		    left: 0;
+		    content: " ";
+		    background: url(../images/arrow_left.svg) center no-repeat;
+		    background-size: 80%;
+		    width: 24px;
+		    height: 24px;
+		    position: absolute;
+		}
+	}
+
+	.next {
+		width: 50%;
+	    margin-left: 50%;
+	    text-align: right;
+		span {
+			position: absolute;
+		    top: 30px;
+		    right: 40px;
+
+		}
+		span:after {
+			top: 1px;
+		    right: -36px;
+		    content: " ";
+		    background: url(../images/arrow_right.svg) center no-repeat;
+		    background-size: 80%;
+		    width: 24px;
+		    height: 24px;
+		    position: absolute;
+		}
+	}
+}
+
+
+
+
+
 
 #intro {
 	width: 100%;

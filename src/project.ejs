@@ -13,37 +13,40 @@
 <body>
 
 <%# Navigation %>
-	<div class="container navbar">
-	    <div id="menu-center" class="wrapper">
-	        <ul>
-	            <li><a class="active" href="#introduction">Introduction</a>
 
-	                <li><a href="#branding">Branding</a>
+<div class="container banner">
+	<a href="#"></a>
+</div>
+<div class="container navbar">
+    <div id="menu-center" class="wrapper">
+        <ul>
+			<li><a href="#introduction">Introduction</a></li>
+			<li><a href="#branding">Branding</a></li>
+			<li><a href="#prototyping">Prototyping</a></li>
+			<li><a href="#design">Design</a></li>
+        </ul>
+    </div>
+</div>
 
-	                </li>
-	                <li><a href="#prototyping">Prototyping</a>
 
-	                </li>
-
-
-	            </li>
-	            <li><a href="#design">Design</a>
-
-	            </li>
-
-	        </ul>
-	    </div>
-	</div>
-
+<div class="block hidden"></div> <%# Fix content offset when sticky %>
 
 <% include ../src/partials/introduction.html %>
 <% include ../src/partials/branding.html %>
 <% include ../src/partials/prototyping.html %>
 <% include ../src/partials/design.html %>
-
+<% include ../src/partials/footer.html %>
 
 <script src="static/js/jquery-1.11.3.min.js"></script>
 <script src="static/js/main.js"></script>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+
 
 </body>
 </html>
