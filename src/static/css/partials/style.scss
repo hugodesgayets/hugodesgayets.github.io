@@ -3,13 +3,16 @@
 	padding: 0;
 }
 
-body, html {
+html { font-size: 62.5%; }
+body { font-size: 2rem; } /* =14px */
+h1   { font-size: 2.4rem; } /* =24px */
+
+body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
 	font-family: "Fakt";
-	font-size: 20px;
 	line-height: 1.55;
 	color: #323232;
 	-webkit-font-smoothing: antialiased;
@@ -62,7 +65,7 @@ section {
 
 a {
 	text-decoration: none;
-	
+
 }
 
 
