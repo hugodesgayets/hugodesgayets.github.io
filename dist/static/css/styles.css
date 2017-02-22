@@ -56,6 +56,12 @@ table {
   font-style: normal; }
 @font-face {
   font-family: 'Fakt';
+  src: url("../css/fonts/Fakt/FaktPro-Blond.eot");
+  src: local("☺"), url("../css/fonts/Fakt/FaktPro-Blond.woff") format("woff"), url("../css/fonts/Fakt/FaktPro-Blond.ttf") format("truetype"), url("../css/fonts/Fakt/FaktPro-Blond.svg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Fakt';
   src: url("../css/fonts/Fakt/FaktPro-Normal.eot");
   src: local("☺"), url("../css/fonts/Fakt/FaktPro-Normal.woff") format("woff"), url("../css/fonts/Fakt/FaktPro-Normal.ttf") format("truetype"), url("../css/fonts/Fakt/FaktPro-Normal.svg") format("svg");
   font-weight: 400;
@@ -74,45 +80,49 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 2rem; }
+  font-size: 1.9rem; }
 
 /* =14px */
 h1 {
-  font-size: 2.4rem; }
+  font-size: 3.4rem; }
 
-/* =24px */
+/* =34px */
+h2 {
+  font-size: 1.9rem;
+  font-weight: 600; }
+
+/* =26px */
+h3 {
+  font-size: 1.8rem; }
+
+/* =18px */
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   font-family: "Fakt";
-  line-height: 1.55;
-  color: #323232;
+  line-height: 3.2rem;
+  color: rgba(0, 0, 0, 0.8);
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: none;
-  letter-spacing: 0.1px; }
+  letter-spacing: 0.2px; }
 
 p {
-  padding: 0 0px 20px 0px; }
-
-h2 {
-  padding: 30px 0px 20px 0px;
-  font-size: 24px;
-  letter-spacing: 0;
-  font-weight: 600; }
-
-h3 {
-  padding: 30px 0px 20px 0px;
-  font-size: 18px; }
-
-p, h2, h3 {
   margin: auto;
+  padding: 0 0px 20px 0px;
   max-width: 700px; }
 
+h1, h2, h3 {
+  margin: auto;
+  max-width: 700px;
+  padding: 30px 0px 20px 0px; }
+
 img {
-  max-width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 700px;
   padding: 40px 0; }
 
 .container {
@@ -150,11 +160,11 @@ a {
       width: 25%;
       float: left;
       text-align: center;
-      padding: 23px 0 16px 0;
+      padding: 22px 0 13px 0;
       color: rgba(0, 0, 0, 0.5); }
     .navbar #menu-center .active {
       color: black;
-      border-bottom: 1px solid #222; }
+      border-bottom: 2px solid #222; }
 
 .block {
   height: 70px; }

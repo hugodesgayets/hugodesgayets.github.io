@@ -32,6 +32,17 @@
 
 // Fakt
 
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../css/fonts/Fakt/FaktPro-Blond.eot');
+  src: local('☺'),    url('../css/fonts/Fakt/FaktPro-Blond.woff')
+  format('woff'),     url('../css/fonts/Fakt/FaktPro-Blond.ttf')
+  format('truetype'), url('../css/fonts/Fakt/FaktPro-Blond.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Fakt';
   src: url('../css/fonts/Fakt/FaktPro-Normal.eot');
