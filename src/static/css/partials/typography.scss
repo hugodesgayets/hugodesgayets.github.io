@@ -62,3 +62,23 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../css/fonts/Fakt/FaktPro-Bold.eot');
+  src: local('☺'),    url('../css/fonts/Fakt/FaktPro-Bold.woff')
+  format('woff'),     url('../css/fonts/Fakt/FaktPro-Bold.ttf')
+  format('truetype'), url('../css/fonts/Fakt/FaktPro-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('../css/fonts/Fakt/FaktPro-Black.eot');
+  src: local('☺'),    url('../css/fonts/Fakt/FaktPro-Black.woff')
+  format('woff'),     url('../css/fonts/Fakt/FaktPro-Black.ttf')
+  format('truetype'), url('../css/fonts/Fakt/FaktPro-Black.svg') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
