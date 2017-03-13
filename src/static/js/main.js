@@ -40,18 +40,18 @@ function onScroll(event){
 
 
 // Fixed Navigation on scroll
-$(window).scroll(function(){
-
-	var sticky = $('.navbar'),
-		block = $('.block'),
-	 	scroll = $(window).scrollTop();
-
-	if (scroll >= 70)
-		sticky.addClass('sticky'),
-		block.removeClass('hidden');
-
-	else
-		sticky.removeClass('sticky'),
-		block.addClass('hidden');
-
-});
+// $(window).scroll(function(){
+//
+// 	var sticky = $('.navbar'),
+// 		block = $('.block'),
+// 	 	scroll = $(window).scrollTop();
+//
+// 	if (scroll >= 70)
+// 		sticky.addClass('sticky'),
+// 		block.removeClass('hidden');
+//
+// 	else
+// 		sticky.removeClass('sticky'),
+// 		block.addClass('hidden');
+//
+// });
