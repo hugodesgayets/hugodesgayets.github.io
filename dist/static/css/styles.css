@@ -105,6 +105,13 @@ h1, h2, h3 {
 h1 {
   padding: 150px 0 60px 0; }
 
+hgroup {
+  font-size: 120px; }
+
+.caption {
+  font-size: 16px;
+  opacity: 0.6; }
+
 .figcaption {
   text-align: center;
   display: block;
