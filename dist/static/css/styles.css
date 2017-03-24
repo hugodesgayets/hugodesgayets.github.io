@@ -60,7 +60,8 @@ body {
 
 /* =18px */
 h1 {
-  font-size: 10rem; }
+  font-size: 9rem;
+  line-height: 11rem; }
 
 /* =100px */
 h2 {
