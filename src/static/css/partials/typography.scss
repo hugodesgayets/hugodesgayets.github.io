@@ -8,6 +8,14 @@
 
 @font-face {
 	font-family: 'maison';
+	src: url('fonts/maisonneue/maisonneue-medium.eot');
+	src: local('☺'), url('fonts/maisonneue/maisonneue-medium.woff') format('woff'), url('fonts/maisonneue/maisonneue-medium.ttf') format('truetype'), url('fonts/maisonneue/maisonneue-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'maison';
 	src: url('fonts/maisonneue/maisonneue-bold.eot');
 	src: local('☺'), url('fonts/maisonneue/maisonneue-bold.woff') format('woff'), url('fonts/maisonneue/maisonneue-bold.ttf') format('truetype'), url('fonts/maisonneue/maisonneue-bold.svg') format('svg');
 	font-weight: 600;

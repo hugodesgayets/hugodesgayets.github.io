@@ -4,10 +4,10 @@
 }
 
 html { font-size: 62.5%; }
-body { font-size: 1.8rem; } /* =18px */
+body { font-size: 1.9rem; } /* =18px */
 h1   { font-size: 9rem; line-height: 11rem; } /* =100px */
 h2   { font-size: 3.0rem; line-height: 42px; } /* =20px */
-h3   { font-size: 1.8rem; opacity: 0.5; } /* =18px */
+h3   { font-size: 2.1rem; font-weight: 600;}
 
 body {
 	margin: 0;
@@ -16,13 +16,12 @@ body {
     height: 100%;
     font-family: "maison";
     font-weight: 400;
-    font-size: 2rem;
     line-height: 1.65em;
-    color: #1C1C1C;
+    color: #000000;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: none;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.1px;
 
 }
 p {
@@ -30,7 +29,7 @@ p {
 	padding: 0 0px 20px 0px;
 	max-width: 800px;
 	span {
-		padding-right:80px;
+		padding-right: 100px;
 		display: block;
 	}
 }
@@ -67,9 +66,20 @@ hgroup {
 
 .quote {
 	display: inline-block;
-	padding-left: 15px;
-	border-left: 1px solid #aaa;
-	color: #777;
+    padding-left: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.30);
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+}
+
+.feedback {
+	border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 12px 22px;
+    max-width: 340px;
+	font-size: 1.6rem;
 }
 
 img {
@@ -82,6 +92,9 @@ img {
 
 .container {
 	width: 100%;
+}
+.banner {
+	background-color: #f3f3f3;
 }
 .wrapper {
 	max-width: 1060px;
@@ -204,23 +217,6 @@ a {
 	}
 }
 
-
-
-
-
-
-#intro {
-	width: 100%;
-}
-#research {
-	width: 100%;
-}
-#branding {
-	width: 100%;
-}
-#product {
-	width: 100%;
-}
 
 
 
