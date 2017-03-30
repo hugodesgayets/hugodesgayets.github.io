@@ -84,7 +84,7 @@ module.exports = function(grunt) {
 			all: {
 				files: {
 					'dist/index.html' : ['src/index.ejs'],
-					'dist/project.html' : ['src/project.ejs'],
+					'dist/mapstr.html' : ['src/mapstr.ejs'],
 					'dist/return.html' : ['src/return.ejs'],
 					// 'dist/support.html' : ['src/support.ejs'],
 					// 'dist/press.html' : ['src/press.ejs'],

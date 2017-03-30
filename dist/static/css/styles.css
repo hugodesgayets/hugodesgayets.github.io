@@ -97,6 +97,9 @@ h2 {
   line-height: 4.2rem;
   margin: 0 0 140px 0; }
 
+strong {
+  font-weight: 600; }
+
 .wrapper {
   max-width: 1400px;
   padding: 0 50px;
@@ -123,18 +126,6 @@ h2 {
 .image-block {
   max-width: 1200px;
   margin: auto; }
-
-.icon {
-  height: 180px;
-  width: 180px;
-  margin: 100px auto 80px auto;
-  border-radius: 40px;
-  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1), 0px 4px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1); }
-
-#mapstr {
-  background: url("../images/icon-mapstr.png") center no-repeat;
-  background-color: #FFAF36;
-  background-size: 62.5%; }
 
 header {
   position: fixed;
@@ -170,6 +161,33 @@ header {
         font-size: 1.6rem;
         line-height: 7.5rem; }
 
+#mapstr {
+  background: url("../images/icon-mapstr.png") #FFA933 center no-repeat;
+  background-size: 62.5%;
+  background-position-y: 52.5%; }
+
+ul.apps {
+  max-width: 800px;
+  margin: auto;
+  display: flex; }
+  ul.apps li {
+    margin-right: 30px;
+    width: 50%; }
+  ul.apps li a {
+    flex-direction: column;
+    flex: 0 0 calc((100% - 120px)/ 4);
+    margin-bottom: 2em; }
+    ul.apps li a .icon {
+      height: 120px;
+      margin-right: 15px;
+      margin-bottom: 39px;
+      width: 120px;
+      border-radius: 30px;
+      box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1), 0px 4px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1); }
+    ul.apps li a p {
+      font-size: 1.6rem;
+      line-height: 2.8rem; }
+
 /* Responsive */
 @media only screen and (max-width: 450px) {
   body {
@@ -204,11 +222,22 @@ header {
       font-size: 1.6rem;
       line-height: 7.5rem; }
 
-  .icon {
-    height: 100px;
-    width: 100px;
-    margin: 80px auto 50px auto;
-    border-radius: 25px;
-    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1), 0px 4px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1); } }
+  ul.apps {
+    display: block; }
+    ul.apps li {
+      margin-right: 30px;
+      width: 100%; }
+    ul.apps li a {
+      display: flex;
+      flex-direction: row;
+      flex: 0 0 100%;
+      margin-bottom: 2em; }
+      ul.apps li a .icon {
+        flex: 0 0 60px;
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+        border-radius: 15px;
+        box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.01), 0px 4px 2px rgba(0, 0, 0, 0.01), 0px 2px 4px rgba(0, 0, 0, 0.01); } }
 
 /*# sourceMappingURL=styles.css.map */
