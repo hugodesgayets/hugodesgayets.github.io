@@ -23,6 +23,13 @@ a {
 	color: inherit;
 }
 
+p {
+	a {
+		border-bottom: 2px solid black;
+		padding-bottom: 4px;
+	}
+}
+
 img {
 	display: block;
 	margin: auto;
@@ -109,7 +116,6 @@ header {
 	width: 100%;
 
 	section {
-		height: 90px;
 		background-color: white;
 		overflow: hidden;
 		-webkit-transition:height 0.3s;
@@ -138,7 +144,7 @@ header {
 		}
 		&.smaller {
 			height: 70px;
-			border-bottom: 1px solid #D9D9D9;
+			border-bottom: 1px solid #EAEAEA;
 			nav {
 				a {
 					font-size: 1.6rem;
