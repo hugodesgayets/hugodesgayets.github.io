@@ -97,3 +97,12 @@ function init() {
     });
 }
 window.onload = init();
+
+
+// FadeIn
+
+$(document).ready(function () {
+	setTimeout( function(){
+	       $('.hidden').fadeIn(500).removeClass('hidden');
+   },500);
+});
