@@ -282,7 +282,7 @@ ul.apps {
     background: url(../images/anim-ios.png) top no-repeat;
     background-size: cover;
     background-position-y: 0%;
-    transition: 0.5s cubic-bezier(0.5, 0, 0.5, 1); }
+    transition: 0.6s cubic-bezier(0.5, 0, 0.5, 1); }
   .frame #android {
     position: absolute;
     top: 87px;
@@ -319,7 +319,7 @@ ul.apps {
       width: 290px;
       height: 320px; }
     .frame #ios {
-      top: 43px;
+      top: 42px;
       left: 81px;
       width: 128px;
       height: 227px; }
