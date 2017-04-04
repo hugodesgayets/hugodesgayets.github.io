@@ -117,6 +117,8 @@ strong {
   margin: 70px auto 60px;
   max-width: 1500px;
   height: 350px; }
+  .heroimage .icon {
+    margin: auto; }
 
 .text-block {
   max-width: 720px;
@@ -258,35 +260,34 @@ ul.apps {
 .frame {
   overflow: hidden;
   position: relative;
-  width: 750px;
-  height: 1010px;
-  margin: auto;
-  transform: scale(0.8); }
+  width: 600px;
+  height: 808px;
+  margin: auto; }
   .frame .devices {
     position: relative;
     z-index: 2;
-    width: 748px;
-    height: 1010px;
+    width: 598px;
+    height: 808px;
     margin: auto;
     background: url("../images/on-devices.png") center no-repeat;
     background-size: contain; }
   .frame #ios {
     position: absolute;
     z-index: 1;
-    top: 196px;
-    left: 288px;
-    width: 375px;
-    height: 667px;
+    top: 157px;
+    left: 230px;
+    width: 300px;
+    height: 534px;
     background: url(../images/anim-ios.png) top no-repeat;
     background-size: cover;
     background-position-y: 0%;
     transition: 0.4s cubic-bezier(0.15, 0, 0.2, 1); }
   .frame #android {
     position: absolute;
-    width: 415px;
-    height: 737px;
-    top: 109px;
-    left: 85px;
+    top: 87px;
+    left: 68px;
+    width: 332px;
+    height: 590px;
     background: url(../images/anim-android.png) top no-repeat;
     background-size: cover;
     background-position-y: 0px;
