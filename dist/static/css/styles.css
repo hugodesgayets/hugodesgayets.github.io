@@ -260,28 +260,29 @@ ul.apps {
 .frame {
   overflow: hidden;
   position: relative;
-  width: 600px;
-  height: 808px;
+  width: 680px;
+  height: 750px;
   margin: auto; }
   .frame .devices {
     position: relative;
-    z-index: 2;
-    width: 598px;
-    height: 808px;
+    z-index: 1;
+    width: 680px;
+    height: 750px;
     margin: auto;
-    background: url("../images/on-devices.png") center no-repeat;
+    background: url("../images/on-device.png") center no-repeat;
     background-size: contain; }
   .frame #ios {
+    overflow: hidden;
     position: absolute;
-    z-index: 1;
-    top: 157px;
-    left: 230px;
+    z-index: 0;
+    top: 97px;
+    left: 191px;
     width: 300px;
     height: 534px;
     background: url(../images/anim-ios.png) top no-repeat;
     background-size: cover;
     background-position-y: 0%;
-    transition: 0.4s cubic-bezier(0.15, 0, 0.2, 1); }
+    transition: 0.5s cubic-bezier(0.5, 0, 0.5, 1); }
   .frame #android {
     position: absolute;
     top: 87px;
@@ -293,7 +294,7 @@ ul.apps {
     background-position-y: 0px;
     transition: 0.4s cubic-bezier(0.15, 0, 0.2, 1); }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 800px) {
   .frame {
     width: 480px;
     height: 648px; }
@@ -301,10 +302,10 @@ ul.apps {
       width: 480px;
       height: 648px; }
     .frame #ios {
-      top: 125px;
-      left: 184px;
-      width: 241px;
-      height: 430px; }
+      top: 129px;
+      left: 135px;
+      width: 212px;
+      height: 377px; }
     .frame #android {
       top: 71px;
       left: 53px;
@@ -312,16 +313,16 @@ ul.apps {
       height: 476px; } }
 @media only screen and (max-width: 560px) {
   .frame {
-    width: 270px;
-    height: 365px; }
+    width: 290px;
+    height: 320px; }
     .frame .devices {
-      width: 270px;
-      height: 365px; }
+      width: 290px;
+      height: 320px; }
     .frame #ios {
-      top: 71px;
-      left: 103px;
-      width: 136px;
-      height: 242px; }
+      top: 43px;
+      left: 81px;
+      width: 128px;
+      height: 227px; }
     .frame #android {
       top: 40px;
       left: 30px;
