@@ -255,5 +255,76 @@ ul.apps {
         margin-right: 15px;
         border-radius: 15px;
         box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.01), 0px 4px 2px rgba(0, 0, 0, 0.01), 0px 2px 4px rgba(0, 0, 0, 0.01); } }
+.frame {
+  position: relative;
+  width: 600px;
+  height: 810px;
+  margin: auto; }
+  .frame .devices {
+    position: relative;
+    z-index: 2;
+    width: 600px;
+    height: 810px;
+    margin: auto;
+    background: url("../images/on-device.png") center no-repeat;
+    background-size: contain; }
+  .frame #ios {
+    position: absolute;
+    z-index: 1;
+    top: 159px;
+    left: 229px;
+    width: 301px;
+    height: 537px;
+    background: url(../images/anim-ios.png) top no-repeat;
+    background-size: cover;
+    background-position-y: 0%;
+    transition: 0.5s cubic-bezier(0.4, 0, 0, 1); }
+  .frame #android {
+    position: absolute;
+    width: 335px;
+    height: 595px;
+    top: 88px;
+    left: 66px;
+    background: url(../images/anim-android.png) top no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+    left: 66px;
+    top: 88px;
+    transition: 0.5s cubic-bezier(0.4, 0, 0, 1); }
+
+@media only screen and (max-width: 800px) {
+  .frame {
+    width: 480px;
+    height: 648px; }
+    .frame .devices {
+      width: 480px;
+      height: 648px; }
+    .frame #ios {
+      top: 127px;
+      left: 183px;
+      width: 241px;
+      height: 430px; }
+    .frame #android {
+      top: 71px;
+      left: 53px;
+      width: 268px;
+      height: 476px; } }
+@media only screen and (max-width: 540px) {
+  .frame {
+    width: 270px;
+    height: 365px; }
+    .frame .devices {
+      width: 270px;
+      height: 365px; }
+    .frame #ios {
+      top: 73px;
+      left: 103px;
+      width: 136px;
+      height: 242px; }
+    .frame #android {
+      top: 40px;
+      left: 30px;
+      width: 150px;
+      height: 268px; } }
 
 /*# sourceMappingURL=styles.css.map */

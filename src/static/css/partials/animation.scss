@@ -1,0 +1,90 @@
+
+
+// Animation layout
+
+.frame {
+    // overflow: hidden;
+    position: relative;
+    width: 600px;
+    height: 810px;
+    margin: auto;
+    .devices {
+        position: relative;
+        z-index: 2;
+        width: 600px;
+        height: 810px;
+        margin: auto;
+        background: url('../images/on-device.png') center no-repeat;
+        background-size: contain;
+    }
+    #ios {
+        position: absolute;
+        z-index: 1;
+        top: 159px;
+        left: 229px;
+        width: 301px;
+        height: 537px;
+        background: url(../images/anim-ios.png) top no-repeat;
+        background-size: cover;
+        background-position-y: 0%;
+        transition: 0.5s cubic-bezier(0.4, 0, 0, 1);
+    }
+    #android {
+        position: absolute;
+        width: 335px;
+        height: 595px;
+        top: 88px;
+        left: 66px;
+        background: url(../images/anim-android.png) top no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        left: 66px;
+        top: 88px;
+        transition: 0.5s cubic-bezier(0.4, 0, 0, 1);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .frame {
+        width: 480px;
+        height: 648px;
+        .devices {
+            width: 480px;
+            height: 648px;
+        }
+        #ios {
+            top: 127px;
+            left: 183px;
+            width: 241px;
+            height: 430px;
+        }
+        #android {
+            top: 71px;
+            left: 53px;
+            width: 268px;
+            height: 476px;
+        }
+    }
+}
+@media only screen and (max-width: 540px) {
+    .frame {
+        width: 270px;
+        height: 365px;
+        .devices {
+            width: 270px;
+            height: 365px;
+        }
+        #ios {
+            top: 73px;
+            left: 103px;
+            width: 136px;
+            height: 242px;
+        }
+        #android {
+            top: 40px;
+            left: 30px;
+            width: 150px;
+            height: 268px;
+        }
+    }
+}

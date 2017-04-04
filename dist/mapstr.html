@@ -57,8 +57,10 @@
 
 
 	<!-- Content -->
-	<div class="image-block">
-		<img src="static/images/on-device.png" alt="devices">
+	<div class="frame">
+		<div class="devices"></div>
+		<div id="ios"></div>
+		<div id="android"></div>
 	</div>
 
 	<div class="text-block">
@@ -70,9 +72,8 @@
 <div class="banner">
 	<div class="wrapper">
 
-
 	<div class="text-block">
-		<span class="legend">Standing at the intersection of a commodity tool and a private social network, the app is used by over +200 thousands of users and contains millions of places, from local POIs to tailor-made locations.</span>
+		<span class="legend">Mapstr Design System - I created a powerful yet accessible cloud-based framework of design components. This tool includes reusable UI components for iOS and Android. Both defined in Sketch documents and in code, its goal is to keep a cohesive experience across our products, as well as a common language to work with.</span>
 	</div>
 
 	</div>
@@ -102,6 +103,62 @@
 <script src="static/js/jquery-1.11.3.min.js"></script>
 <script src="static/js/main.js"></script>
 
+<script>
+
+var rotate = function() {
+  $("#ios")
+    .delay(4000).queue(function() {
+        $(this).css({
+            "background-position-y": "0%"
+        });
+        $(this).dequeue();
+    })
+    .delay(4000).queue(function() {
+        $(this).css({
+            "background-position-y": "50%"
+        });
+        $(this).dequeue();
+    })
+    .delay(4000).queue(function(next) {
+        $(this).css({
+            "background-position-y": "100%"
+        });
+        $(this).dequeue();
+        next();
+    })
+    .queue(rotate);
+};
+
+rotate();
+
+var rotateAndroid = function() {
+  $("#android")
+    .delay(4000).queue(function() {
+        $(this).css({
+            "background-position-y": "0%"
+        });
+        $(this).dequeue();
+    })
+    .delay(4000).queue(function() {
+        $(this).css({
+            "background-position-y": "50%"
+        });
+        $(this).dequeue();
+    })
+    .delay(4000).queue(function(next) {
+        $(this).css({
+            "background-position-y": "100%"
+        });
+        $(this).dequeue();
+        next();
+    })
+    .queue(rotateAndroid);
+};
+
+rotateAndroid();
+
+
+</script>
 
 </body>
 </html>
