@@ -57,6 +57,15 @@ h2 {
 	margin: 0 0 140px 0;
 }
 
+h3 {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin: 0 0 10px 0;
+    color: #ABABAB;
+}
+
 strong {
 	font-weight: 600;
 }
@@ -89,7 +98,6 @@ strong {
 	max-width: 720px;
 	padding-right: 80px;
 	margin: 0 auto 50px auto;
-
 	.legend {
 		display: inline-block;
 		padding-left: 20px;

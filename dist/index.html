@@ -37,11 +37,72 @@
 	</div>
 </div>
 
-<!-- Apps -->
 
+<div class="wrapper hidden">
+	<!-- Project -->
+	<div class="frame">
+		<div class="devices"></div>
+		<div class="regular slider">
+			<div><img src="static/images/phone.png"></div>
+			<div><img src="http://placehold.it/375x667?text=2"></div>
+		</div>
+
+
+	</div>
+	<!-- Project infos-->
+	<div class="text-block">
+		<h3>2015 - 2017 - Product Design UX/UI</h3>
+		<h2>Mapstr</h2>
+		<p>
+			Mapstr is a storage and a synchronization service that let users
+			save and share their favorite places. Standing at the intersection
+			of a commodity tool and a private social network, the app is used
+			by over +200 thousands of users and contains millions of places,
+			from local POIs to tailor-made locations.
+			<br>
+			My role as a UX Designer was to help improve user acquisition,
+			drive engagement and build-up the community through the design,
+			test and delivery of both inclusive and accessible interface solutions.
+			<br>
+			In this context, I led and mentored a team of 6 engineers, worked
+			the end-to-end process — from design research to product iterations,
+			and provided a rich documentation, including flows, prototypes
+			and GUI specifications.
+		</p>
+		<div class="text-block">
+			<p>Find more on <a href="https://dribbble.com/hugodesgayets" target="_blank">Dribbble</a>.</a></p>
+		</div>
+
+	</div>
+
+
+
+
+</div>
 
 <script src="static/js/jquery-1.11.3.min.js"></script>
 <script src="static/js/main.js"></script>
+
+<script type="text/javascript">
+  $(document).on('ready', function() {
+	$(".regular").slick({
+	  accessibility: false,
+	  dots: false,
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
+	  focusOnSelect: false,
+	  arrows: false,
+	  draggable: false,
+	  fade: false,
+	  vertical: true,
+	  pauseOnFocus: false,
+	  pauseOnHover: false
+	});
+  });
+</script>
 
 </body>
 </html>

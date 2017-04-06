@@ -100,6 +100,14 @@ h2 {
   line-height: 4.2rem;
   margin: 0 0 140px 0; }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px 0;
+  color: #ABABAB; }
+
 strong {
   font-weight: 600; }
 
@@ -260,25 +268,27 @@ ul.apps {
 .frame {
   overflow: hidden;
   position: relative;
-  width: 680px;
-  height: 750px;
-  margin: auto; }
+  width: 750px;
+  height: 800px;
+  margin: auto;
+  background-color: #FFEEE2;
+  background-color: #FFF; }
   .frame .devices {
     position: relative;
     z-index: 1;
-    width: 680px;
-    height: 750px;
+    width: 750px;
+    height: 800px;
     margin: auto;
-    background: url("../images/on-device.png") center no-repeat;
+    background: url("../images/on-devices.png") center no-repeat;
     background-size: contain; }
   .frame #ios {
     overflow: hidden;
     position: absolute;
     z-index: 0;
-    top: 97px;
-    left: 191px;
-    width: 300px;
-    height: 534px;
+    top: 146px;
+    left: 535px;
+    width: 280px;
+    height: 498px;
     background: url(../images/anim-ios.png) top no-repeat;
     background-size: cover;
     background-position-y: 0%;
@@ -294,6 +304,27 @@ ul.apps {
     background-position-y: 0px;
     transition: 0.4s cubic-bezier(0.15, 0, 0.2, 1); }
 
+/* Slider */
+.slick-slider {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent; }
+  .slick-slider .slick-list {
+    position: absolute;
+    top: 154px;
+    left: 306px;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 298px; }
+  .slick-slider .slick-slide img {
+    padding: 0 !important;
+    display: block; }
+
 @media only screen and (max-width: 800px) {
   .frame {
     width: 480px;
@@ -301,16 +332,10 @@ ul.apps {
     .frame .devices {
       width: 480px;
       height: 648px; }
-    .frame #ios {
-      top: 129px;
-      left: 135px;
-      width: 212px;
-      height: 377px; }
-    .frame #android {
-      top: 71px;
-      left: 53px;
-      width: 268px;
-      height: 476px; } }
+    .frame .slick-list {
+      top: 126px;
+      left: 184px;
+      width: 240px; } }
 @media only screen and (max-width: 560px) {
   .frame {
     width: 290px;
@@ -318,15 +343,9 @@ ul.apps {
     .frame .devices {
       width: 290px;
       height: 320px; }
-    .frame #ios {
-      top: 42px;
-      left: 81px;
-      width: 128px;
-      height: 227px; }
-    .frame #android {
-      top: 40px;
-      left: 30px;
-      width: 150px;
-      height: 268px; } }
+    .frame .slick-list {
+      top: 61px;
+      left: 118px;
+      width: 120px; } }
 
 /*# sourceMappingURL=styles.css.map */
