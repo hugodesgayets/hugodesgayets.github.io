@@ -1,3 +1,5 @@
+
+
 html, * {
 	margin: 0;
 	padding: 0;
@@ -16,6 +18,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-text-size-adjust: none;
+	margin-bottom: 140px;
 }
 
 .hidden {
@@ -29,8 +32,8 @@ a {
 
 p {
 	a {
-		border-bottom: 2px solid black;
-		padding-bottom: 4px;
+		border-bottom: 1px solid black;
+		padding-bottom: 3px;
 	}
 }
 
@@ -48,21 +51,21 @@ h1 {
 	font-size: 9rem;
 	line-height: 11rem;
 	letter-spacing: -0.1px;
-	margin: 200px 0 70px 0;
+	margin: 0 0 70px 0;
 }
 
 h2 {
 	font-size: 3rem;
 	line-height: 4.2rem;
-	margin: 0 0 140px 0;
+	margin: 0 0 20px 0;
 }
 
 h3 {
 	text-transform: uppercase;
-	font-size: 1.2rem;
+    font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1.5px;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0px;
     color: #ABABAB;
 }
 
@@ -85,6 +88,10 @@ strong {
 	max-width: 1500px;
 }
 
+.hero {
+    margin: 160px auto 100px auto;
+}
+
 .heroimage {
 	margin: 70px auto 60px;
 	max-width: 1500px;
@@ -97,7 +104,7 @@ strong {
 .text-block {
 	max-width: 720px;
 	padding-right: 80px;
-	margin: 0 auto 50px auto;
+	margin: 0 auto;
 	.legend {
 		display: inline-block;
 		padding-left: 20px;
@@ -220,16 +227,10 @@ ul.apps {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Responsive */
+@media only screen and (max-width: 800px) {
+	body { margin-bottom: 100px; }
+}
 
 @media only screen and (max-width: 450px) {
 
@@ -239,10 +240,12 @@ ul.apps {
 
 	// Typography
 
-	h1 { font-size: 6rem; line-height: 7rem; margin: 170px 0 70px 0; }
+	h1 { font-size: 6rem; line-height: 7rem; margin: 0 0 35px 0; }
 	h2 { font-size: 2.1rem; line-height: 3.2rem; }
 
 	// Blocks
+
+	.hero { margin: 140px 0 60px 0; }
 
 	.wrapper { padding: 0 25px; }
 

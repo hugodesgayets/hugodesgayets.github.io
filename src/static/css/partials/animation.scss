@@ -3,13 +3,11 @@
 // Animation layout
 
 .frame {
-    overflow: hidden;
     position: relative;
     width: 750px;
     height: 800px;
     margin: auto;
-    background-color: #FFEEE2;
-    background-color: #FFF;
+    padding-bottom: 30px;
     .devices {
         position: relative;
         z-index: 1;
@@ -19,46 +17,14 @@
         background: url('../images/on-devices.png') center no-repeat;
         background-size: contain;
     }
-    #ios {
-        overflow: hidden;
-        position: absolute;
-        z-index: 0;
-        top: 146px;
-        left: 535px;
-        width: 280px;
-        height: 498px;
-        background: url(../images/anim-ios.png) top no-repeat;
-        background-size: cover;
-        background-position-y: 0%;
-        transition: 0.6s cubic-bezier(0.5, 0, 0.5, 1);
+    .slick-slider {
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
     }
-    #android {
-        position: absolute;
-        top: 87px;
-        left: 68px;
-        width: 332px;
-        height: 590px;
-        background: url(../images/anim-android.png) top no-repeat;
-        background-size: cover;
-        background-position-y: 0px;
-        transition: 0.4s cubic-bezier(0.15, 0, 0.2, 1);
-    }
-}
-
-
-
-
-
-
-/* Slider */
-.slick-slider {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
-
     .slick-list {
         position: absolute;
         top: 154px;
@@ -69,21 +35,14 @@
         padding: 0;
         width: 298px;
     }
-
-    .slick-slide img
-    {
+    .slick-slide img {
         padding: 0 !important;
         display: block;
     }
 }
 
 
-
-
-
-
-
-
+// Responsive
 
 @media only screen and (max-width: 800px) {
     .frame {
@@ -103,16 +62,16 @@
 
 @media only screen and (max-width: 560px) {
     .frame {
-        width: 290px;
-        height: 320px;
+        width: 270px;
+        height: 365px;
         .devices {
-            width: 290px;
-            height: 320px;
+            width: 270px;
+            height: 365px;
         }
         .slick-list {
-            top: 61px;
-            left: 118px;
-            width: 120px;
+            top: 71px;
+            left: 103px;
+            width: 136px;
         }
     }
 }

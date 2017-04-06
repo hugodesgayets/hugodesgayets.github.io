@@ -70,7 +70,8 @@ body {
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+  margin-bottom: 140px; }
 
 .hidden {
   display: none; }
@@ -80,8 +81,8 @@ a {
   color: inherit; }
 
 p a {
-  border-bottom: 2px solid black;
-  padding-bottom: 4px; }
+  border-bottom: 1px solid black;
+  padding-bottom: 3px; }
 
 img {
   display: block;
@@ -93,19 +94,19 @@ h1 {
   font-size: 9rem;
   line-height: 11rem;
   letter-spacing: -0.1px;
-  margin: 200px 0 70px 0; }
+  margin: 0 0 70px 0; }
 
 h2 {
   font-size: 3rem;
   line-height: 4.2rem;
-  margin: 0 0 140px 0; }
+  margin: 0 0 20px 0; }
 
 h3 {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 1.5px;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0px;
   color: #ABABAB; }
 
 strong {
@@ -121,6 +122,9 @@ strong {
   background-color: #f7f7f7;
   max-width: 1500px; }
 
+.hero {
+  margin: 160px auto 100px auto; }
+
 .heroimage {
   margin: 70px auto 60px;
   max-width: 1500px;
@@ -131,7 +135,7 @@ strong {
 .text-block {
   max-width: 720px;
   padding-right: 80px;
-  margin: 0 auto 50px auto; }
+  margin: 0 auto; }
   .text-block .legend {
     display: inline-block;
     padding-left: 20px;
@@ -215,6 +219,9 @@ ul.apps {
       line-height: 2.8rem; }
 
 /* Responsive */
+@media only screen and (max-width: 800px) {
+  body {
+    margin-bottom: 100px; } }
 @media only screen and (max-width: 450px) {
   body {
     font-size: 1.6rem;
@@ -226,11 +233,14 @@ ul.apps {
   h1 {
     font-size: 6rem;
     line-height: 7rem;
-    margin: 170px 0 70px 0; }
+    margin: 0 0 35px 0; }
 
   h2 {
     font-size: 2.1rem;
     line-height: 3.2rem; }
+
+  .hero {
+    margin: 140px 0 60px 0; }
 
   .wrapper {
     padding: 0 25px; }
@@ -266,13 +276,11 @@ ul.apps {
         border-radius: 15px;
         box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.01), 0px 4px 2px rgba(0, 0, 0, 0.01), 0px 2px 4px rgba(0, 0, 0, 0.01); } }
 .frame {
-  overflow: hidden;
   position: relative;
   width: 750px;
   height: 800px;
   margin: auto;
-  background-color: #FFEEE2;
-  background-color: #FFF; }
+  padding-bottom: 30px; }
   .frame .devices {
     position: relative;
     z-index: 1;
@@ -281,38 +289,14 @@ ul.apps {
     margin: auto;
     background: url("../images/on-devices.png") center no-repeat;
     background-size: contain; }
-  .frame #ios {
-    overflow: hidden;
-    position: absolute;
-    z-index: 0;
-    top: 146px;
-    left: 535px;
-    width: 280px;
-    height: 498px;
-    background: url(../images/anim-ios.png) top no-repeat;
-    background-size: cover;
-    background-position-y: 0%;
-    transition: 0.6s cubic-bezier(0.5, 0, 0.5, 1); }
-  .frame #android {
-    position: absolute;
-    top: 87px;
-    left: 68px;
-    width: 332px;
-    height: 590px;
-    background: url(../images/anim-android.png) top no-repeat;
-    background-size: cover;
-    background-position-y: 0px;
-    transition: 0.4s cubic-bezier(0.15, 0, 0.2, 1); }
-
-/* Slider */
-.slick-slider {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent; }
-  .slick-slider .slick-list {
+  .frame .slick-slider {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent; }
+  .frame .slick-list {
     position: absolute;
     top: 154px;
     left: 306px;
@@ -321,7 +305,7 @@ ul.apps {
     margin: 0;
     padding: 0;
     width: 298px; }
-  .slick-slider .slick-slide img {
+  .frame .slick-slide img {
     padding: 0 !important;
     display: block; }
 
@@ -338,14 +322,14 @@ ul.apps {
       width: 240px; } }
 @media only screen and (max-width: 560px) {
   .frame {
-    width: 290px;
-    height: 320px; }
+    width: 270px;
+    height: 365px; }
     .frame .devices {
-      width: 290px;
-      height: 320px; }
+      width: 270px;
+      height: 365px; }
     .frame .slick-list {
-      top: 61px;
-      left: 118px;
-      width: 120px; } }
+      top: 71px;
+      left: 103px;
+      width: 136px; } }
 
 /*# sourceMappingURL=styles.css.map */
