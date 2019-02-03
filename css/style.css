@@ -1,0 +1,34 @@
+*, html, body {
+	font-family: "FG";
+	font-weight: 500;
+	color: black;
+	-webkit-font-smoothing: antialiased;
+	cursor: url('../assets/arrow.png') 3 0, auto;
+    cursor: url('../assets/arrow.svg') 3 0, auto;
+    cursor: -webkit-image-set(url('../assets/arrow.png') 1x, url('../assets/arrow@2x.png') 2x) 3 0, auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: url('../assets/pointer.png') 3 0, auto;
+    cursor: url('../assets/pointer.svg') 3 0, auto;
+    cursor: -webkit-image-set(url('../assets/pointer.png') 1x, url('../assets/pointer@2x.png') 2x) 13 2, auto;
+}
+
+.container {
+	position: absolute;
+	top: 43%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 48px;
+}
+
+@media screen and (max-width: 640px) {
+	.container {
+		top: 45%;
+		font-size: 24px;
+	}
+  }
